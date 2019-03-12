@@ -1,9 +1,8 @@
 spring:
   application:
-    name: service-registry
-spring:
+    name: serviceRegistry
   cloud:
-    config:
-      profile: dev
-      lable: master
-      uri: http://localhost:7000/
+      config:
+        profile: dev
+        label: master
+        uri: http://localhost:7000/
