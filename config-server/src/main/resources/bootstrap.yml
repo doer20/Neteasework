@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+      config:
+        server:
+          git:
+            uri: https://gitee.com/iss2015302580186/NeteaseWork
+            search-paths: config-repository
+            username: 15271901633@163.com
+            password: 123456+-:
+server:
+  port: 7000
