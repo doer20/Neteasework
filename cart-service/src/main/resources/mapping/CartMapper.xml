@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.doer.cartservice.Mapper.CartMapper" >
+  <resultMap id="BaseResultMap" type="com.doer.cartservice.Entities.Cart" >
+    <id column="cart_id" property="cartId" jdbcType="VARCHAR" />
+    <result column="product_id" property="productId" jdbcType="VARCHAR" />
+    <result column="count" property="count" jdbcType="INTEGER" />
+    <result column="price_in_cart" property="priceInCart" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    cart_id, product_id, count, price_in_cart
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from cart
+    where cart_id = #{cartId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from cart
+    where cart_id = #{cartId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.doer.cartservice.Entities.Cart" >
+    insert into cart (cart_id, product_id, count, 
+      price_in_cart)
+    values (#{cartId,jdbcType=VARCHAR}, #{productId,jdbcType=VARCHAR}, #{count,jdbcType=INTEGER}, 
+      #{priceInCart,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.doer.cartservice.Entities.Cart" >
+    insert into cart
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="cartId != null" >
+        cart_id,
+      </if>
+      <if test="productId != null" >
+        product_id,
+      </if>
+      <if test="count != null" >
+        count,
+      </if>
+      <if test="priceInCart != null" >
+        price_in_cart,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="cartId != null" >
+        #{cartId,jdbcType=VARCHAR},
+      </if>
+      <if test="productId != null" >
+        #{productId,jdbcType=VARCHAR},
+      </if>
+      <if test="count != null" >
+        #{count,jdbcType=INTEGER},
+      </if>
+      <if test="priceInCart != null" >
+        #{priceInCart,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.doer.cartservice.Entities.Cart" >
+    update cart
+    <set >
+      <if test="productId != null" >
+        product_id = #{productId,jdbcType=VARCHAR},
+      </if>
+      <if test="count != null" >
+        count = #{count,jdbcType=INTEGER},
+      </if>
+      <if test="priceInCart != null" >
+        price_in_cart = #{priceInCart,jdbcType=INTEGER},
+      </if>
+    </set>
+    where cart_id = #{cartId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.doer.cartservice.Entities.Cart" >
+    update cart
+    set product_id = #{productId,jdbcType=VARCHAR},
+      count = #{count,jdbcType=INTEGER},
+      price_in_cart = #{priceInCart,jdbcType=INTEGER}
+    where cart_id = #{cartId,jdbcType=VARCHAR}
+  </update>
+</mapper>
