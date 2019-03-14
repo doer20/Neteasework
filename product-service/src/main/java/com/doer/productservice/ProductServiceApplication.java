@@ -1,18 +1,17 @@
-package com.doer.configserver;
+package com.doer.productservice;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.config.server.EnableConfigServer;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableDiscoveryClient
-@EnableConfigServer
+@MapperScan("com.doer.productservice.Mapper")
 @SpringBootApplication
-public class ConfigServerApplication {
+public class ProductServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigServerApplication.class, args);
+        SpringApplication.run(ProductServiceApplication.class, args);
     }
 
 }
