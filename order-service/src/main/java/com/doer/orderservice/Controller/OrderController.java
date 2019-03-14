@@ -12,7 +12,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @RequestMapping("/orders/{order_id}")
+    @RequestMapping("/detail/{order_id}")
     public String getOrder(@PathVariable String order_id){
         return orderService.getOrder(order_id).toString();
     }

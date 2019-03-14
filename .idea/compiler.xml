@@ -9,8 +9,10 @@
         <module name="account-service" />
         <module name="cart-service" />
         <module name="config-server" />
+        <module name="edge-service" />
         <module name="hystrix-dashboard" />
         <module name="order-service" />
+        <module name="payment-service" />
         <module name="product-service" />
         <module name="service-registry" />
         <module name="turbine" />

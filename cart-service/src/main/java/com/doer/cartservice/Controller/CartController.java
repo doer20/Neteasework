@@ -12,7 +12,7 @@ public class CartController {
     @Autowired
     private CartService cartService;
 
-    @RequestMapping("/cart/{id}")
+    @RequestMapping("/cart/{cart_id}")
     public String getCart(@PathVariable String cart_id){
         return cartService.getCart(cart_id).toString();
     }

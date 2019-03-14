@@ -13,6 +13,17 @@ public class Product {
 
     private Integer price;
 
+    public Product(){}
+
+    public Product(String product_id,String title,String content,String summary,String image_src,int price){
+        this.productId = product_id;
+        this.title = title;
+        this.content = content;
+        this.summary = summary;
+        this.imageSrc = image_src;
+        this.price = price;
+    }
+
     public String getProductId() {
         return productId;
     }
