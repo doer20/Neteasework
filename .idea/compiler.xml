@@ -9,6 +9,7 @@
         <module name="account-service" />
         <module name="config-server" />
         <module name="hystrix-dashboard" />
+        <module name="order-service" />
         <module name="product-service" />
         <module name="service-registry" />
         <module name="turbine" />

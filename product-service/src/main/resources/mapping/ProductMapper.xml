@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="doer.IDao.ProductMapper" >
-  <resultMap id="BaseResultMap" type="doer.domain.Product" >
+<mapper namespace="com.doer.productservice.Mapper.ProductMapper" >
+  <resultMap id="BaseResultMap" type="com.doer.productservice.Entities.Product" >
     <id column="product_id" property="productId" jdbcType="VARCHAR" />
     <result column="title" property="title" jdbcType="VARCHAR" />
     <result column="content" property="content" jdbcType="VARCHAR" />
@@ -22,7 +22,7 @@
     delete from product
     where product_id = #{productId,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="doer.domain.Product" >
+  <insert id="insert" parameterType="com.doer.productservice.Entities.Product" >
     insert into product (product_id, title, content, 
       summary, image_src, price
       )
@@ -30,7 +30,7 @@
       #{summary,jdbcType=VARCHAR}, #{imageSrc,jdbcType=VARCHAR}, #{price,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="doer.domain.Product" >
+  <insert id="insertSelective" parameterType="com.doer.productservice.Entities.Product" >
     insert into product
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="productId != null" >
@@ -73,7 +73,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="doer.domain.Product" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.doer.productservice.Entities.Product" >
     update product
     <set >
       <if test="title != null" >
@@ -94,7 +94,7 @@
     </set>
     where product_id = #{productId,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="doer.domain.Product" >
+  <update id="updateByPrimaryKey" parameterType="com.doer.productservice.Entities.Product" >
     update product
     set title = #{title,jdbcType=VARCHAR},
       content = #{content,jdbcType=VARCHAR},
