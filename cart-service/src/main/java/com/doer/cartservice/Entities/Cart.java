@@ -1,21 +1,11 @@
 package com.doer.cartservice.Entities;
 
 public class Cart {
-    private String cartId;
-
     private String productId;
 
     private Integer count;
 
     private Integer priceInCart;
-
-    public String getCartId() {
-        return cartId;
-    }
-
-    public void setCartId(String cartId) {
-        this.cartId = cartId == null ? null : cartId.trim();
-    }
 
     public String getProductId() {
         return productId;
@@ -43,11 +33,8 @@ public class Cart {
 
     @Override
     public String toString() {
-        return "Cart{" +
-                "cart_id=" + cartId +
-                ", product_id='" + productId + '\'' +
-                ", count='" + count + '\'' +
-                ", priceDone='" + priceInCart + '\'' +
-                '}';
+        return "{\"productId\":\""+productId+"\"," +
+                "\"count\":"+count+"," +
+                "\"priceInCart\":"+priceInCart+"}";
     }
 }

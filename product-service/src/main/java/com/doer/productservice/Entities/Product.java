@@ -13,15 +13,18 @@ public class Product {
 
     private Integer price;
 
+    private Integer closingNum;
+
     public Product(){}
 
-    public Product(String product_id,String title,String content,String summary,String image_src,int price){
+    public Product(String product_id,String title,String content,String summary,String image_src,int price,int closingNum){
         this.productId = product_id;
         this.title = title;
         this.content = content;
         this.summary = summary;
         this.imageSrc = image_src;
         this.price = price;
+        this.closingNum = closingNum;
     }
 
     public String getProductId() {
@@ -72,15 +75,22 @@ public class Product {
         this.price = price;
     }
 
+    public Integer getClosingNum() {
+        return closingNum;
+    }
+
+    public void setClosingNum(Integer closingNum) {
+        this.closingNum = closingNum;
+    }
+
     @Override
     public String toString() {
-        return "Product{" +
-                "product_id=" + productId +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                ", summary='" + summary + '\'' +
-                ", price='" + price + '\'' +
-                ", imageSrc='" + imageSrc + '\'' +
-                '}';
+        return "{\"productId\":\""+productId+"\"" +
+                ",\"title\":\""+title+"\"" +
+                ",\"content\":\""+content+"\"" +
+                ",\"summary\":\""+summary+"\"" +
+                ",\"price\":"+price+"" +
+                ",\"imageSrc\":\""+imageSrc+"\"" +
+                ",\"closingNum\":"+closingNum+"}";
     }
 }

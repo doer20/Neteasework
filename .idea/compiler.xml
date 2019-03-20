@@ -18,5 +18,8 @@
         <module name="turbine" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="inventory-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

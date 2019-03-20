@@ -1,0 +1,121 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>购物车</title>
+</head>
+<body class="body">
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column" style="padding-top: 0px">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+                    <div class="pull-right" style="margin-top: 10px">
+                        <a href="/home" style="color: black;margin-right:5px">Home</a>
+                        <a th:if="${session.isLogin == true}"  style="color: black;margin-right:5px">
+                            <a th:if="${session.authorities.contains('ROLE_BUYER')}" href="/finance" style="color: black;margin-right:5px">财务</a>
+                            <a th:if="${session.authorities.contains('ROLE_BUYER')}" href="/shoppingCart" style="color: black;margin-right:5px">购物车</a>
+                            <a th:if="${session.authorities.contains('ROLE_SELLER')}" href="/public" style="color: black;margin-right:5px">发布</a>
+                            <a href="/logout" style="color: black">登出</a>
+                        </a>
+                        <a th:if="${session.isLogin == null}" href="/login" style="color: black;margin-right:5px">Login</a>
+                    </div>
+                    <div class="tab-content column col-md-12" style="margin-top: 40px">
+                        <div id="panel-all" class="fade in active">
+                            <div id="content">
+                                <table class="cartTable">
+                                    <thead>
+                                    <tr><th>内容名称</th><th>数量</th><th>价格</th></tr>
+                                    </thead>
+
+                                    <tbody class="content" th:each="bundle, interStat : ${bundleList}">
+                                    <td><span th:text="${bundle.product.getTitle()}" style="font-size:15px;margin-left:15px;"></span></td>
+                                    <td>
+                                        <a class="red" href="#" id="increase" th:onclick="increase([[${bundle.product.getProductId()}]],[[${bundle.cart.getPriceInCart()}]],[[${interStat.index}]])">+</a>
+                                        <span th:id="'cartNum'+${interStat.index}" th:text="${bundle.cart.getCount()}" style="font-size:15px;margin-left:15px;"></span>
+                                        <a class="blue" id="decrease" th:onclick="decrease([[${bundle.product.getProductId()}]],[[${interStat.index}]])" href="#">-</a>
+                                    </td>
+                                    <td><span th:text="${bundle.cart.getPriceInCart()}" style="font-size:15px;margin-left:15px;"></span></td>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div style="float:right;margin-right:230px;">
+                                <input class="btn" type="button" value="退出" id="deleteBtn" th:onclick="location=[[${from}]]">
+                                <input class="btn" type="button" value="购买" id="toBuyBtn" onclick="buyAllInCart()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    function increase(var1,var2,var3){
+        var cartNum = document.getElementById("cartNum"+var3);
+        $.ajax({
+            type: "POST",
+            url: "/addIntoCart",
+            data:"productId="+var1+"&count=1&priceInCart="+var2,
+            error:function () {
+                alert("Error in cart option");
+            },
+            success:function (msg) {
+                var obj = JSON.parse(msg);
+                if (obj.status ==true) {
+                    cartNum.innerHTML=parseInt(cartNum.innerHTML) + 1;
+                }else {
+                    alert("Error in cart option");
+                }
+            }
+        });
+    }
+    function decrease(var1,var2){
+        var cartNum = document.getElementById("cartNum"+var2);
+        var num = parseInt(cartNum.innerHTML);
+        if (num == 0){
+            return;
+        }
+        $.ajax({
+            type: "POST",
+            url: "/decrease",
+            data:"productId="+var1,
+            error:function () {
+                alert("Error in cart option");
+            },
+            success:function (msg) {
+                var obj = JSON.parse(msg);
+                if (obj.status ==true) {
+                    cartNum.innerHTML=parseInt(cartNum.innerHTML) - 1;
+                }else {
+                    alert("Error in cart option");
+                }
+            }
+        });
+    }
+
+    function buyAllInCart() {
+        $.ajax({
+            type: "POST",
+            url: "/buyAllInCart",
+            error:function () {
+                alert("Error in buying option");
+            },
+            success:function (msg) {
+                var obj = JSON.parse(msg);
+                if (obj.status ==true) {
+                    alert("购买成功！");
+                    window.location.href="/home"
+                }else {
+                    alert("Error in buying option");
+                }
+            }
+        });
+    }
+
+</script>
+</html>
+

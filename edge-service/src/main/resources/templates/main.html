@@ -1,0 +1,149 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>主页</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="body">
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column" style="padding-top: 0px">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#panel-all" data-toggle="tab">所有内容</a>
+                        </li>
+                        <li th:if="${session.authorities!=null && session.authorities.contains('ROLE_BUYER')}">
+                            <a href="#panel-unsold" data-toggle="tab">未购买内容</a>
+                        </li>
+                        <li>
+                            <a th:if="${session.isLogin == true}" th:text="'Welcome:'+${session.username}+
+' 身份:'+${#strings.toString(session.authorities)}" style="color: black;margin-right:5px"></a>
+                        </li>
+                    </ul>
+                    <div class="pull-right" style="margin-top: 10px">
+                        <a href="/home" style="color: black;margin-right:5px">Home</a>
+                        <a th:if="${session.isLogin == true}"  style="color: black;margin-right:5px">
+                            <a th:if="${session.authorities.contains('ROLE_BUYER')}" href="/finance" style="color: black;margin-right:5px">财务</a>
+                            <a th:if="${session.authorities.contains('ROLE_BUYER')}" th:href="'/shoppingCart?from='+${#request.getServletPath()}" style="color: black;margin-right:5px">购物车</a>
+                            <a th:if="${session.authorities.contains('ROLE_SELLER')}" href="/public" style="color: black;margin-right:5px">发布</a>
+                            <a href="/logout" style="color: black">登出</a>
+                        </a>
+                        <a th:if="${session.isLogin == null}" href="/login" style="color: black;margin-right:5px">Login</a>
+                    </div>
+                    <div class="tab-content column col-md-12" style="margin-top: 40px">
+                        <!--所有内容-->
+                        <div id="panel-all" class="tab-pane fade in active">
+                            <div id="content">
+                                <div id="productList">
+                                    <tr th:each="prod, interStat : ${productList}">
+                                        <div th:class="'subject-item subject-item-'+${prod.getProductId()}">
+                                            <div class="pic">
+                                                <a target="_blank" th:href="'detail/'+${prod.getProductId()}">
+                                                    <img alt="140x140"  style="height:184px;width:120px"  th:src="${prod.getImageSrc()}"/>
+                                                </a>
+                                            </div>
+                                            <div class="info">
+                                                <h2 th:text="${prod.getTitle()}" style="margin-bottom: 3px"></h2>
+                                                <p>
+                                                <div th:text="'价格：¥'+${prod.getPrice()}"></div>
+                                                </p>
+                                                <div th:if="${session.authorities!=null && session.authorities.contains('ROLE_SELLER')}" style="margin-top: 5px">
+                                                    <div th:if="${prod.getClosingNum() == 0}">
+                                                        <span>状态：商品未售出</span>
+                                                        <button th:onclick="deleteUnsold([[${prod.getProductId()}]])">删除</button>
+                                                    </div>
+                                                    <div th:if="${prod.getClosingNum() != 0}">状态：商品已售出</div>
+                                                </div></div>
+                                            <div th:if="${session.authorities!=null && session.authorities.contains('ROLE_BUYER')}" style="margin-top: 5px">
+                                                <div th:if="${prod.getClosingNum() == 0}">状态：当前未购买</div>
+                                                <div th:if="${prod.getClosingNum() != 0}">状态：当前已购买</div>
+                                            </div>
+                                            <div style="margin-top: 10px">
+                                                <div th:if="${#strings.length(prod.getSummary()) > 30}">
+                                                    <div th:text="${#strings.abbreviate(prod.getSummary(),30)}"></div>
+                                                    <a style="cursor:default;text-decoration:none;color:#0000ff;" th:title="${prod.getSummary()}">...</a>
+                                                </div>
+                                                <div th:if="${#strings.length(prod.getSummary()) <= 30}">
+                                                    <div th:text="${prod.getSummary()}"></div>
+                                                </div>
+                                            </div>
+                                            <div class="ft">
+                                                <span><a th:href="'detail/'+${prod.getProductId()}" target="_blank">Detail</a></span>
+                                            </div>
+                                        </div>
+                                </div>
+                                </tr>
+                            </div>
+                        </div>
+
+                        <!--未购买内容,只用户身份可见-->
+                        <div th:if="${session.authorities!=null && session.authorities.contains('ROLE_BUYER')}" id="panel-unsold" class="tab-pane fade">
+                            <div id="unsoldContent">
+                                <div id="unsoldProductList">
+                                    <tr th:each="prod, interStat : ${unsoldList}">
+                                        <div th:class="'subject-item subject-item-'+${prod.getProductId()}">
+                                            <div class="pic">
+                                                <a target="_blank" th:href="'detail/'+${prod.getProductId()}">
+                                                    <img alt="140x140"  style="height:184px;width:120px"  th:src="${prod.getImageSrc()}"/>
+                                                </a>
+                                            </div>
+                                            <div class="info">
+                                                <h2 th:text="${prod.getTitle()}" style="margin-bottom: 3px"></h2>
+                                                <p>
+                                                <div th:text="'价格：¥'+${prod.getPrice()}"></div>
+                                                </p>
+                                                <div style="margin-top: 10px">
+                                                    <div th:if="${#strings.length(prod.getSummary()) > 30}">
+                                                        <div th:text="${#strings.abbreviate(prod.getSummary(),30)}"></div>
+                                                        <a style="cursor:default;text-decoration:none;color:#0000ff;" th:title="${prod.getSummary()}">...</a>
+                                                    </div>
+                                                    <div th:if="${#strings.length(prod.getSummary()) <= 30}">
+                                                        <div th:text="${prod.getSummary()}"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ft">
+                                                    <span><a th:href="'/detail/'+${prod.getProductId()}" target="_blank">Detail</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </tr>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function deleteUnsold(var1) {
+        var productList = document.getElementById("productList");
+        $.ajax({
+            type: "POST",
+            url: "/deleteUnsold",
+            data:"productId="+var1,
+            error:function () {
+                alert("Error in deleteUnsold option");
+            },
+            success:function (msg) {
+                var obj = JSON.parse(msg);
+                if (obj.status ==true) {
+                    var list = document.getElementsByClassName("subject-item-"+var1);
+                    list[0].remove()
+                    list[0].remove()
+                }else {
+                    alert("Error in deleteUnsold option");
+                }
+            }
+        });
+    }
+</script>
+</html>

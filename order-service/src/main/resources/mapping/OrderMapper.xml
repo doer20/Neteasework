@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.doer.orderservice.Entities.Order" >
     <id column="order_id" property="orderId" jdbcType="VARCHAR" />
     <result column="product_id" property="productId" jdbcType="VARCHAR" />
-    <result column="date" property="date" jdbcType="DATE" />
+    <result column="date" property="date" jdbcType="TIMESTAMP" />
     <result column="count" property="count" jdbcType="INTEGER" />
     <result column="price_done" property="priceDone" jdbcType="INTEGER" />
   </resultMap>
@@ -17,6 +17,22 @@
     from orders
     where order_id = #{orderId,jdbcType=VARCHAR}
   </select>
+  <select id="getOrderList" resultMap="BaseResultMap" >
+    select
+    <include refid="Base_Column_List"/>
+    from orders
+    order by date desc
+    LIMIT #{offset,jdbcType=INTEGER},#{rowCount,jdbcType=INTEGER}
+  </select>
+  <select id="getOrderByProductId" resultMap="BaseResultMap" parameterType="java.lang.String">
+    select
+    <include refid="Base_Column_List" />
+    from orders
+    where product_id = #{productId,jdbcType=VARCHAR}
+  </select>
+  <select id="getCount" resultType="java.lang.Integer">
+    select count(*) from orders
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
     delete from orders
     where order_id = #{orderId,jdbcType=VARCHAR}
@@ -24,7 +40,7 @@
   <insert id="insert" parameterType="com.doer.orderservice.Entities.Order" >
     insert into orders (order_id, product_id, date, 
       count, price_done)
-    values (#{orderId,jdbcType=VARCHAR}, #{productId,jdbcType=VARCHAR}, #{date,jdbcType=DATE}, 
+    values (#{orderId,jdbcType=VARCHAR}, #{productId,jdbcType=VARCHAR}, #{date,jdbcType=TIMESTAMP},
       #{count,jdbcType=INTEGER}, #{priceDone,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.doer.orderservice.Entities.Order" >
@@ -54,7 +70,7 @@
         #{productId,jdbcType=VARCHAR},
       </if>
       <if test="date != null" >
-        #{date,jdbcType=DATE},
+        #{date,jdbcType=TIMESTAMP},
       </if>
       <if test="count != null" >
         #{count,jdbcType=INTEGER},
@@ -71,7 +87,7 @@
         product_id = #{productId,jdbcType=VARCHAR},
       </if>
       <if test="date != null" >
-        date = #{date,jdbcType=DATE},
+        date = #{date,jdbcType=TIMESTAMP},
       </if>
       <if test="count != null" >
         count = #{count,jdbcType=INTEGER},
@@ -85,7 +101,7 @@
   <update id="updateByPrimaryKey" parameterType="com.doer.orderservice.Entities.Order" >
     update orders
     set product_id = #{productId,jdbcType=VARCHAR},
-      date = #{date,jdbcType=DATE},
+      date = #{date,jdbcType=TIMESTAMP},
       count = #{count,jdbcType=INTEGER},
       price_done = #{priceDone,jdbcType=INTEGER}
     where order_id = #{orderId,jdbcType=VARCHAR}

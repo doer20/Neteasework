@@ -1,5 +1,7 @@
 package com.doer.orderservice.Entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class Order {
@@ -29,6 +31,7 @@ public class Order {
         this.productId = productId == null ? null : productId.trim();
     }
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     public Date getDate() {
         return date;
     }
@@ -55,12 +58,10 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "order_id=" + orderId +
-                ", product_id='" + productId + '\'' +
-                ", date='" + date + '\'' +
-                ", count='" + count + '\'' +
-                ", priceDone='" + priceDone + '\'' +
-                '}';
+        return "{\"orderId\":\""+orderId+"\"," +
+                "\"productId\":\""+productId+"\"," +
+                "\"date\":\""+date+"\"," +
+                "\"count\":"+count+"," +
+                "\"priceDone\":"+priceDone+"}";
     }
 }

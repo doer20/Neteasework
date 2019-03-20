@@ -8,9 +8,10 @@
     <result column="summary" property="summary" jdbcType="VARCHAR" />
     <result column="image_src" property="imageSrc" jdbcType="VARCHAR" />
     <result column="price" property="price" jdbcType="INTEGER" />
+    <result column="closing_num" property="closingNum" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Base_Column_List" >
-    product_id, title, content, summary, image_src, price
+    product_id, title, content, summary, image_src, price, closing_num
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 
@@ -19,12 +20,26 @@
     where product_id = #{productId,jdbcType=VARCHAR}
   </select>
   <select id="selectBriefList" resultMap="BaseResultMap" >
-    select product_id,title,image_src,price
+    select <include refid="Base_Column_List" />
     from product
+    order by product_id+0
     LIMIT #{offset,jdbcType=INTEGER},#{rowCount,jdbcType=INTEGER}
   </select>
   <select id="getCount" resultType="java.lang.Integer">
     select count(*) from product
+  </select>
+  <select id="getClosingNum" resultType="java.lang.Integer" parameterType="java.lang.String">
+    select closing_num from product
+    where product_id = #{productId,jdbcType=VARCHAR}
+  </select>
+  <select id="getUnsoldBriefList" resultMap="BaseResultMap" >
+    select product_id,title,summary,image_src,price,closing_num
+    from product
+    where closing_num = 0
+    order by product_id+0
+  </select>
+  <select id="selectAutoIncrementId" resultType="java.lang.String">
+    select product_id + 1 from product order by product_id+0 desc limit 1
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
     delete from product
@@ -32,11 +47,11 @@
   </delete>
   <insert id="insert" parameterType="com.doer.productservice.Entities.Product" >
     insert into product (product_id, title, content, 
-      summary, image_src, price
-      )
+      summary, image_src, price, 
+      closing_num)
     values (#{productId,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, 
-      #{summary,jdbcType=VARCHAR}, #{imageSrc,jdbcType=VARCHAR}, #{price,jdbcType=INTEGER}
-      )
+      #{summary,jdbcType=VARCHAR}, #{imageSrc,jdbcType=VARCHAR}, #{price,jdbcType=INTEGER}, 
+      #{closingNum,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.doer.productservice.Entities.Product" >
     insert into product
@@ -59,6 +74,9 @@
       <if test="price != null" >
         price,
       </if>
+      <if test="closingNum != null" >
+        closing_num,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="productId != null" >
@@ -78,6 +96,9 @@
       </if>
       <if test="price != null" >
         #{price,jdbcType=INTEGER},
+      </if>
+      <if test="closingNum != null" >
+        #{closingNum,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -99,6 +120,9 @@
       <if test="price != null" >
         price = #{price,jdbcType=INTEGER},
       </if>
+      <if test="closingNum != null" >
+        closing_num = #{closingNum,jdbcType=INTEGER},
+      </if>
     </set>
     where product_id = #{productId,jdbcType=VARCHAR}
   </update>
@@ -108,7 +132,8 @@
       content = #{content,jdbcType=VARCHAR},
       summary = #{summary,jdbcType=VARCHAR},
       image_src = #{imageSrc,jdbcType=VARCHAR},
-      price = #{price,jdbcType=INTEGER}
+      price = #{price,jdbcType=INTEGER},
+      closing_num = #{closingNum,jdbcType=INTEGER}
     where product_id = #{productId,jdbcType=VARCHAR}
   </update>
 </mapper>

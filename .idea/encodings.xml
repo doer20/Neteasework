@@ -3,23 +3,33 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/account-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/account-service/src/main/java/com/doer/accountservice/Entities/User.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/account-service/src/main/java/com/doer/accountservice/Mapper/UserMapper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/account-service/src/main/resources/mapping/UserMapper.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/cart-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cart-service/src/main/java/com/doer/cartservice/Entities/Cart.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/cart-service/src/main/java/com/doer/cartservice/Mapper/CartMapper.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/cart-service/src/main/resources/mapping/CartMapper.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/edge-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/java/com/doer/edgeservice/Entities/Cart.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/java/com/doer/edgeservice/Entities/Order.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/java/com/doer/edgeservice/Entities/Product.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/css/loadingStyle.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/cart.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/detail.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/home.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/login.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/order.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/inventory-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order-service/src/main/java/com/doer/orderservice/Entities/Order.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/order-service/src/main/java/com/doer/orderservice/Mapper/OrderMapper.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/order-service/src/main/resources/mapping/OrderMapper.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/payment-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/product-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/product-service/src/main/java/com/doer/productservice/Entities/IDao" charset="GBK" />
     <file url="file://$PROJECT_DIR$/product-service/src/main/java/com/doer/productservice/Entities/Product.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/product-service/src/main/java/com/doer/productservice/Entities/domain" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/product-service/src/main/java/com/doer/productservice/Entities/mapping" charset="GBK" />
     <file url="file://$PROJECT_DIR$/product-service/src/main/java/com/doer/productservice/Mapper/ProductMapper.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/product-service/src/main/resources/mapping/ProductMapper.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/service-registry" charset="UTF-8" />

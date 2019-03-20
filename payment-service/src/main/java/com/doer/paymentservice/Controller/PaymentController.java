@@ -12,9 +12,9 @@ public class PaymentController {
     @Autowired
     private PaymentService paymentService;
     
-    @RequestMapping(value = "/payment", method = RequestMethod.POST)
-    public String payment(String user_id,int orderPrice){
-        boolean flag = paymentService.payment(user_id,orderPrice);
-        return "{'status':"+ flag + "}";
+    @RequestMapping(value = "/pay", method = RequestMethod.POST)
+    public String payment(String userId,int orderPrice){
+        boolean flag = paymentService.payment(userId,orderPrice);
+        return "{\"status\":"+ flag + "}";
     }
 }

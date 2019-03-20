@@ -5,7 +5,8 @@
 
     <artifactId>NeteaseWork/hystrix-dashboard</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hystrix-dashboard</name>
+    <packaging>jar</packaging>
+    <name>NeteaseWork/hystrix-dashboard</name>
     <description>Hystrix Dashboard</description>
 
     <parent>

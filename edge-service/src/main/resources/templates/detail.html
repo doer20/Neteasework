@@ -1,0 +1,132 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${product.getTitle()}"></title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="body">
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column" style="padding-top: 0px">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+                    <div class="pull-right" style="margin-top: 10px">
+                        <a href="/home" style="color: black;margin-right:5px">Home</a>
+                        <a th:if="${session.isLogin == true}"  style="color: black;margin-right:5px">
+                            <a th:if="${session.authorities.contains('ROLE_BUYER')}" href="/finance" style="color: black;margin-right:5px">财务</a>
+                            <a th:if="${session.authorities.contains('ROLE_BUYER')}" th:href="'/shoppingCart?from='+${#request.getServletPath()}" style="color: black;margin-right:5px">购物车</a>
+                            <a th:if="${session.authorities.contains('ROLE_SELLER')}" href="/public" style="color: black;margin-right:5px">发布</a>
+                            <a href="/logout" style="color: black">登出</a>
+                        </a>
+                        <a th:if="${session.isLogin == null}" href="/login" style="color: black;margin-right:5px">Login</a>
+                    </div>
+                    <div class="tab-content column col-md-12" style="margin-top: 40px">
+                        <div id="panel-all" class="fade in active">
+                            <div class="container"style="margin-bottom:50px">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <h1 th:text="${product.getTitle()}" style="padding-top: 30px;padding-left: 20px"></h1>
+                                    </div>
+                                </div>
+                                <div class="row content">
+                                    <div class="col-lg-2">
+                                        <div class="product-img">
+                                            <a>
+                                                <img alt="140x140" th:src="${product.getImageSrc()}"  style="height:192px;width:144px" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="productInfo">
+                                        <ul>
+                                            <li><span>摘&nbsp&nbsp要：</span><span th:text="${product.getSummary()}"></span></li>
+                                            <li><span>价&nbsp&nbsp&nbsp&nbsp格：</span><span th:text="${product.getPrice()}"></span><br></li>
+                                            <li th:if="${session.isLogin == true}">
+                                                <div th:if="${session.authorities.contains('ROLE_SELLER')}">
+                                                    <span>成交数: </span><span th:text="${product.getClosingNum()}"></span><br>
+                                                    <a id="edit" style="margin-left:5px" th:href="'/edit?productId='+${product.getProductId()}">编辑</a>
+                                                </div>
+                                                <div class="buyer" th:if="${session.authorities.contains('ROLE_BUYER')}">
+                                                    <div th:if="${product.getClosingNum() == 0}">
+                                                        <a class="red" href="#" id="increase" th:onclick="increase([[${product.getProductId()}]],[[${product.getPrice()}]])">+</a>
+                                                        <span th:if="${cart.getCount() == null}" th:id="cartNum" style="margin-right: 10px">0</span>
+                                                        <span th:if="${cart.getCount() != null}" th:id="cartNum" th:text="${cart.getCount()} " style="margin-right: 10px"></span>
+                                                        <a class="blue" id="decrease" th:onclick="decrease([[${product.getProductId()}]])" href="#">-</a>
+                                                    </div>
+                                                    <div th:if="${product.getClosingNum() != 0}">
+                                                        <span>已购买</span><br>
+                                                        <span th:text="'成交价： ¥'+${order.getPriceDone()}"></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-2" style="padding-left: 30px">
+                                        <span style="color: green"><h4>内容简介……</h4></span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div th:text="'&nbsp&nbsp&nbsp&nbsp'+${product.getContent()}" class="col-lg-8" style="padding-left: 30px">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    var cartNum = document.getElementById("cartNum");
+    function increase(var1,var2){
+        var num = parseInt(cartNum.innerHTML);
+        $.ajax({
+            type: "POST",
+            url: "/addIntoCart",
+            data:"productId="+var1+"&count=1&priceInCart="+var2,
+            error:function () {
+                alert("Error in cart option");
+            },
+            success:function (msg) {
+                var obj = JSON.parse(msg);
+                if (obj.status ==true) {
+                    cartNum.innerHTML=parseInt(cartNum.innerHTML) + 1;
+                }else {
+                    alert("Error in cart option");
+                }
+            }
+        });
+    }
+    function decrease(var1){
+        var num = parseInt(cartNum.innerHTML);
+        if (num == 0){
+            return;
+        }
+        $.ajax({
+            type: "POST",
+            url: "/decrease",
+            data:"productId="+var1,
+            error:function () {
+                alert("Error in cart option");
+            },
+            success:function (msg) {
+                var obj = JSON.parse(msg);
+                if (obj.status ==true) {
+                    cartNum.innerHTML=parseInt(cartNum.innerHTML) - 1;
+                }else {
+                    alert("Error in cart option");
+                }
+            }
+        });
+    }
+</script>
