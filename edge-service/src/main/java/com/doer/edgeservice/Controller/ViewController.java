@@ -3,9 +3,7 @@ package com.doer.edgeservice.Controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.doer.edgeservice.Entities.Cart;
-import com.doer.edgeservice.Entities.Order;
-import com.doer.edgeservice.Entities.Product;
+import com.doer.edgeservice.Entities.*;
 import com.doer.edgeservice.Service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -77,28 +75,59 @@ public class ViewController {
         String productMes = productService.getCatalog(0,1000);
         List<Product> productList = JSON.parseArray(productMes,Product.class);
         model.addAttribute("productList",productList);
-        List <String> auth;
-        if ((auth = (List<String>) httpSession.getAttribute("authorities")) != null && auth.contains("ROLE_BUYER")){
-            String unsoldMes = productService.getUnsoldList();
-            List<Product> unsoldList = JSON.parseArray(unsoldMes,Product.class);
-            model.addAttribute("unsoldList",unsoldList);
+        List<String> auths = (List<String>) httpSession.getAttribute("authorities");
+        if (auths.contains("ROLE_BUYER")){
+            List<CartProductBundle> bundleList = edgeService.getCart();
+            int cartCount = Integer.parseInt(cartService.getCount());
+            int cartSummary = edgeService.getCartSummary();
+            model.addAttribute("bundleList",bundleList);
+            model.addAttribute("cartCount",cartCount);
+            model.addAttribute("cartSummary",cartSummary);
         }
-        return "main";
+        return "_______store";
     }
 
+    @RequestMapping(value = "/unsold", method = RequestMethod.GET)
+    public String unsoldPage(Model model,HttpSession httpSession){
+        String unsoldMes = productService.getUnsoldList();
+        List<Product> unsoldList = JSON.parseArray(unsoldMes,Product.class);
+        model.addAttribute("unsoldList",unsoldList);
+        List<String> auths = (List<String>) httpSession.getAttribute("authorities");
+        if (auths.contains("ROLE_BUYER")){
+            List<CartProductBundle> bundleList = edgeService.getCart();
+            int cartCount = Integer.parseInt(cartService.getCount());
+            int cartSummary = edgeService.getCartSummary();
+            model.addAttribute("bundleList",bundleList);
+            model.addAttribute("cartCount",cartCount);
+            model.addAttribute("cartSummary",cartSummary);
+        }
+        return "unsold";
+    }
+
+
     @ResponseBody
-    @RequestMapping(value = "deleteUnsold",method = RequestMethod.POST)
+    @RequestMapping(value = "/deleteUnsold",method = RequestMethod.POST)
     public String deleteUnsold(String productId){
         String msg = productService.deleteUnsoldProduct(productId);
+        cartService.delete(productId);
         return msg;
     }
 
     @RequestMapping(value = "/detail/{productId}",method = RequestMethod.GET)
-    public String detailPage(Model model,@PathVariable String productId){
+    public String detailPage(Model model,@PathVariable String productId,HttpSession httpSession){
         String productJson = productService.getProduct(productId);
         Product product = JSON.parseObject(productJson,Product.class);
         if (product.getProductId() == null){
             return "redirect:/home";
+        }
+        List<String> auths = (List<String>) httpSession.getAttribute("authorities");
+        if (auths.contains("ROLE_BUYER")){
+            List<CartProductBundle> bundleList = edgeService.getCart();
+            int cartCount = Integer.parseInt(cartService.getCount());
+            int cartSummary = edgeService.getCartSummary();
+            model.addAttribute("bundleList",bundleList);
+            model.addAttribute("cartCount",cartCount);
+            model.addAttribute("cartSummary",cartSummary);
         }
         String orderJson = orderService.getOrderByProductId(productId);
         List<Order> orderList = JSON.parseArray(orderJson,Order.class);
@@ -110,7 +139,7 @@ public class ViewController {
         Cart cart = JSON.parseObject(cartJson,Cart.class);
         model.addAttribute("product",product);
         model.addAttribute("cart",cart);
-        return "detail";
+        return "product";
     }
 
     @ResponseBody
@@ -147,6 +176,11 @@ public class ViewController {
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     public String edit(String imgType,@RequestParam(value = "file", required = false) MultipartFile file,Product product) throws IOException {
         String msg;
+        Cart cart = JSON.parseObject(cartService.getItem(product.getProductId()),Cart.class);
+        if (cart.getProductId() != null){
+            cart.setPriceInCart(product.getPrice());
+            cartService.update(cart);
+        }
         if ("url".equals(imgType)){
             msg = productService.updateProduct(product);
         }else{
@@ -210,16 +244,7 @@ public class ViewController {
 
     @RequestMapping(value = "/shoppingCart", method = RequestMethod.GET)
     public String cartPage(@RequestParam(defaultValue = "#") String from,Model model){
-        String cartMes = cartService.getCartList(0,1000);
-        List<Cart> cartList = JSON.parseArray(cartMes,Cart.class);
-        List<CartProductBundle> bundleList = new ArrayList<>();
-        for (Cart item :cartList){
-            String productId = item.getProductId();
-            String productJson = productService.getProduct(productId);
-            Product product = JSON.parseObject(productJson,Product.class);
-            CartProductBundle bundle = new CartProductBundle(item,product);
-            bundleList.add(bundle);
-        }
+        List<CartProductBundle> bundleList = edgeService.getCart();
         model.addAttribute("from",from);
         model.addAttribute("bundleList",bundleList);
         return "cart";
@@ -230,20 +255,4 @@ public class ViewController {
 
 
 
-}
-class OrderProductBundle{
-    public Order order;
-    public Product product;
-    public OrderProductBundle(Order order,Product product){
-        this.order = order;
-        this.product = product;
-    }
-}
-class CartProductBundle{
-    public Cart cart;
-    public Product product;
-    public CartProductBundle(Cart cart,Product product){
-        this.cart = cart;
-        this.product = product;
-    }
 }

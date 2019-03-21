@@ -28,6 +28,7 @@ public class AccountInterceptor implements HandlerInterceptor {
                 || path.startsWith("/home")
                 || path.startsWith("/error")
                 || path.startsWith("/detail")
+                || path.startsWith("/temp")
                 || path.startsWith("/js")
                 || path.startsWith("/css")
                 || path.startsWith("/img")) {
@@ -38,6 +39,7 @@ public class AccountInterceptor implements HandlerInterceptor {
             List<String> auths = (List<String>) request.getSession().getAttribute("authorities");
             if (path.startsWith("/shoppingCart")
                     || path.startsWith("/finance")
+                    || path.startsWith("/unsold")
                     || path.startsWith("/increase")
                     || path.startsWith("/decrease")
                     || path.startsWith("/buyAllInCart")

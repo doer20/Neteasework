@@ -45,5 +45,16 @@ public class CartController {
         return String.valueOf(count);
     }
 
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    public String update(@RequestBody Cart cart){
+        boolean flag = cartService.update(cart);
+        return "{\"status\":"+flag+"}";
+    }
+
+    @RequestMapping(value = "/delete/{productId}", method = RequestMethod.POST)
+    public String delete(@PathVariable(value = "productId") String productId){
+        boolean flag = cartService.delete(productId);
+        return "{\"status\":"+flag+"}";
+    }
 
 }

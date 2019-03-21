@@ -26,6 +26,24 @@ public class CartService {
         return cartMapper.getCount();
     }
 
+    public boolean update(Cart cart){
+        boolean flag = true;
+        if (getItem(cart.getProductId()) == null){
+            flag = false;
+        }else {
+            cartMapper.updateByPrimaryKeySelective(cart);
+        }
+        return flag;
+    }
+
+    public boolean delete(String productId){
+        boolean flag = true;
+        if (getItem(productId) != null){
+            cartMapper.deleteByPrimaryKey(productId);
+        }
+        return flag;
+    }
+
     public boolean addToCart(Cart cart){
         boolean flag = true;
         Cart item;

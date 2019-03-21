@@ -29,4 +29,10 @@ public interface CartService {
 
     @RequestMapping(value = "/count", method = RequestMethod.GET)
     String getCount();
+
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    String update(Cart cart);
+
+    @RequestMapping(value = "/delete/{productId}", method = RequestMethod.POST)
+    String delete(@PathVariable(value = "productId") String productId);
 }

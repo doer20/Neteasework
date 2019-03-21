@@ -2,21 +2,20 @@ package com.doer.edgeservice.Service;
 
 import com.alibaba.fastjson.JSONObject;
 import com.doer.edgeservice.Entities.Cart;
+import com.doer.edgeservice.Entities.CartProductBundle;
 import com.doer.edgeservice.Entities.Order;
+import com.doer.edgeservice.Entities.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 import com.alibaba.fastjson.JSON;
 import org.springframework.util.FileCopyUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -95,11 +94,27 @@ public class EdgeService {
         String resp = productService.addClosingNum(productId);
         return JSON.parseObject(resp).getBoolean("status");
     }
-}
 
-/*
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-        HttpEntity<String> request = new HttpEntity<String>(order.toString(), headers);
-        ResponseEntity entity = restTemplate.postForEntity(uri,request,String.class);
- */
+    public List<CartProductBundle> getCart(){
+        String cartMes = cartService.getCartList(0,1000);
+        List<Cart> cartList = JSON.parseArray(cartMes,Cart.class);
+        List<CartProductBundle> bundleList = new ArrayList<>();
+        for (Cart item :cartList){
+            String productId = item.getProductId();
+            String productJson = productService.getProduct(productId);
+            Product product = JSON.parseObject(productJson,Product.class);
+            CartProductBundle bundle = new CartProductBundle(item,product);
+            bundleList.add(bundle);
+        }
+        return bundleList;
+    }
+
+    public int getCartSummary(){
+        List<Cart> carts = JSON.parseArray(cartService.getCartList(0,1000),Cart.class);
+        int summary = 0;
+        for (Cart item : carts){
+            summary += item.getCount() * item.getPriceInCart();
+        }
+        return summary;
+    }
+}
