@@ -9,7 +9,7 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers(
-                "/pay**").hasRole("BUYER").anyRequest().authenticated();
+        http.authorizeRequests().antMatchers("/actuator/**").permitAll()
+                .antMatchers("/pay**").hasRole("BUYER").anyRequest().authenticated();
     }
 }

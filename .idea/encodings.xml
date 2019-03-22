@@ -16,7 +16,9 @@
     <file url="file://$PROJECT_DIR$/edge-service/src/main/java/com/doer/edgeservice/Entities/Order.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/java/com/doer/edgeservice/Entities/Product.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/css/loadingStyle.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/favicon.ico" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/img/logo.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/img/logo.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/img/logo.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/img/logo2.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/img/logo3.jpg" charset="GBK" />
@@ -24,22 +26,28 @@
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/temp/fonts" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/temp/img" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/temp/js" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/_______store.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/static/temp/js/md5.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/cart.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/detail.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/edit.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/finance.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/home.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/home.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/login.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/order.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/login2.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/product.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/public.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/_______store.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/_______store.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/______blank.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/cart.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/cart.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/detail.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/detail.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/edit.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/finance.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/home.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/login.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/order.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/public.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/temp/store_backup.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/edge-service/src/main/resources/templates/unsold.html" charset="GBK" />

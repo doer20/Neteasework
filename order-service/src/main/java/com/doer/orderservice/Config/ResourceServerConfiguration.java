@@ -8,12 +8,13 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers(
+        http.authorizeRequests().antMatchers("/actuator/**").permitAll()
+                .antMatchers(
                 "/list**",
                 "/addOrder**",
                 "/product**",
                 "/count**").hasRole("BUYER")
-        .antMatchers(
+                .antMatchers(
                 "/detail/**",
                 "/delete**",
                 "/edit**").hasRole("ADMIN").anyRequest().authenticated();

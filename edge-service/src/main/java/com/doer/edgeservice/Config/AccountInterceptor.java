@@ -40,6 +40,7 @@ public class AccountInterceptor implements HandlerInterceptor {
             if (path.startsWith("/shoppingCart")
                     || path.startsWith("/finance")
                     || path.startsWith("/unsold")
+                    || path.startsWith("/cartFragment")
                     || path.startsWith("/increase")
                     || path.startsWith("/decrease")
                     || path.startsWith("/buyAllInCart")

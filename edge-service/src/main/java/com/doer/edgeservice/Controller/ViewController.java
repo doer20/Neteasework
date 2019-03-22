@@ -76,15 +76,11 @@ public class ViewController {
         List<Product> productList = JSON.parseArray(productMes,Product.class);
         model.addAttribute("productList",productList);
         List<String> auths = (List<String>) httpSession.getAttribute("authorities");
-        if (auths.contains("ROLE_BUYER")){
-            List<CartProductBundle> bundleList = edgeService.getCart();
+        if (auths != null && auths.contains("ROLE_BUYER")){
             int cartCount = Integer.parseInt(cartService.getCount());
-            int cartSummary = edgeService.getCartSummary();
-            model.addAttribute("bundleList",bundleList);
             model.addAttribute("cartCount",cartCount);
-            model.addAttribute("cartSummary",cartSummary);
         }
-        return "_______store";
+        return "home";
     }
 
     @RequestMapping(value = "/unsold", method = RequestMethod.GET)
@@ -93,13 +89,9 @@ public class ViewController {
         List<Product> unsoldList = JSON.parseArray(unsoldMes,Product.class);
         model.addAttribute("unsoldList",unsoldList);
         List<String> auths = (List<String>) httpSession.getAttribute("authorities");
-        if (auths.contains("ROLE_BUYER")){
-            List<CartProductBundle> bundleList = edgeService.getCart();
+        if (auths != null && auths.contains("ROLE_BUYER")){
             int cartCount = Integer.parseInt(cartService.getCount());
-            int cartSummary = edgeService.getCartSummary();
-            model.addAttribute("bundleList",bundleList);
             model.addAttribute("cartCount",cartCount);
-            model.addAttribute("cartSummary",cartSummary);
         }
         return "unsold";
     }
@@ -108,9 +100,14 @@ public class ViewController {
     @ResponseBody
     @RequestMapping(value = "/deleteUnsold",method = RequestMethod.POST)
     public String deleteUnsold(String productId){
-        String msg = productService.deleteUnsoldProduct(productId);
-        cartService.delete(productId);
-        return msg;
+        String productMsg = productService.deleteUnsoldProduct(productId);
+        boolean deleteProductFlag = JSON.parseObject(productMsg).getBoolean("status");
+        JSONObject res = new JSONObject();
+        res.put("deleteProductFlag",deleteProductFlag);
+        String cartMsg = cartService.delete(productId);
+        boolean deleteCartFlag = JSON.parseObject(cartMsg).getBoolean("status");
+        res.put("deleteCartFlag",deleteCartFlag);
+        return res.toJSONString();
     }
 
     @RequestMapping(value = "/detail/{productId}",method = RequestMethod.GET)
@@ -121,13 +118,9 @@ public class ViewController {
             return "redirect:/home";
         }
         List<String> auths = (List<String>) httpSession.getAttribute("authorities");
-        if (auths.contains("ROLE_BUYER")){
-            List<CartProductBundle> bundleList = edgeService.getCart();
+        if (auths != null && auths.contains("ROLE_BUYER")){
             int cartCount = Integer.parseInt(cartService.getCount());
-            int cartSummary = edgeService.getCartSummary();
-            model.addAttribute("bundleList",bundleList);
             model.addAttribute("cartCount",cartCount);
-            model.addAttribute("cartSummary",cartSummary);
         }
         String orderJson = orderService.getOrderByProductId(productId);
         List<Order> orderList = JSON.parseArray(orderJson,Order.class);
@@ -169,6 +162,8 @@ public class ViewController {
         if (product.getProductId() == null)
             return "redirect:/home";
         model.addAttribute("originProduct",product);
+        int cartCount = Integer.parseInt(cartService.getCount());
+        model.addAttribute("cartCount",cartCount);
         return "edit";
     }
 
@@ -181,6 +176,7 @@ public class ViewController {
             cart.setPriceInCart(product.getPrice());
             cartService.update(cart);
         }
+        Product originProduct = JSON.parseObject(productService.getProduct(product.getProductId()),Product.class);
         if ("url".equals(imgType)){
             msg = productService.updateProduct(product);
         }else{
@@ -188,6 +184,7 @@ public class ViewController {
             String status = JSON.parseObject(srcJson).getString("status");
             if ("success".equals(status)){
                 String path = JSON.parseObject(srcJson).getString("path");
+                edgeService.deleteFile(originProduct.getImageSrc());
                 product.setImageSrc(path);
                 msg = productService.updateProduct(product);
             }else {
@@ -198,8 +195,9 @@ public class ViewController {
     }
 
     @RequestMapping(value = "/public", method = RequestMethod.GET)
-    public String publicPage(){
-
+    public String publicPage(Model model){
+        int cartCount = Integer.parseInt(cartService.getCount());
+        model.addAttribute("cartCount",cartCount);
         return "public";
     }
 
@@ -227,7 +225,7 @@ public class ViewController {
     public String orderPage(Model model){
         String orderMes = orderService.getOrderList(0,1000);
         List<Order> orderList = JSON.parseArray(orderMes,Order.class);
-        List<OrderProductBundle> bundleList = new ArrayList<>();
+        List<OrderProductBundle> orderProductBundleList = new ArrayList<>();
         int total = 0;
         for (Order item : orderList){
             total += item.getCount() * item.getPriceDone();
@@ -235,21 +233,36 @@ public class ViewController {
             String productJson = productService.getProduct(productId);
             Product product = JSON.parseObject(productJson,Product.class);
             OrderProductBundle bundle = new OrderProductBundle(item,product);
-            bundleList.add(bundle);
+            orderProductBundleList.add(bundle);
         }
-        model.addAttribute("bundleList",bundleList);
+        model.addAttribute("orderBundleList",orderProductBundleList);
         model.addAttribute("total",total);
-        return "order";
+        int cartCount = Integer.parseInt(cartService.getCount());
+        model.addAttribute("cartCount",cartCount);
+        return "finance";
     }
 
     @RequestMapping(value = "/shoppingCart", method = RequestMethod.GET)
-    public String cartPage(@RequestParam(defaultValue = "#") String from,Model model){
+    public String cartPage(Model model){
         List<CartProductBundle> bundleList = edgeService.getCart();
-        model.addAttribute("from",from);
+        int cartSummary = edgeService.getCartSummary();
+        int cartCount = Integer.parseInt(cartService.getCount());
         model.addAttribute("bundleList",bundleList);
+        model.addAttribute("cartCount",cartCount);
+        model.addAttribute("cartSummary",cartSummary);
         return "cart";
     }
 
+    @RequestMapping(value = "/cartFragment", method = RequestMethod.GET)
+    public String cartFragment(Model model){
+        List<CartProductBundle> bundleList = edgeService.getCart();
+        int cartSummary = edgeService.getCartSummary();
+        int cartCount = Integer.parseInt(cartService.getCount());
+        model.addAttribute("bundleList",bundleList);
+        model.addAttribute("cartCount",cartCount);
+        model.addAttribute("cartSummary",cartSummary);
+        return "cartFragment";
+    }
 
 
 

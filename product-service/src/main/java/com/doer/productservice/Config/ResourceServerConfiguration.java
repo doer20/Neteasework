@@ -11,6 +11,7 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
     public void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests().antMatchers(
                 "/list**",
+                "/actuator/**",
                 "/detail/**").permitAll()
                 .antMatchers(
                         "/unsoldList**").hasAnyRole("SELLER","BUYER")

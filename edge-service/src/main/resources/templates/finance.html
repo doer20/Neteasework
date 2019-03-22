@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>登录</title>
+	<title>财务</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -94,10 +94,10 @@
 		<div id="responsive-nav">
 			<!-- NAV -->
 			<ul class="main-nav nav navbar-nav">
-				<li class="active"><a href="/home">所有内容</a></li>
+				<li><a href="/home">所有内容</a></li>
 				<li><a th:if="${session.authorities!=null && session.authorities.contains('ROLE_BUYER')}"
-					   href="/unsold">未购买内容</a></li>
-				<li><a th:if="${session.authorities!=null && session.authorities.contains('ROLE_BUYER')}"
+									  href="/unsold">未购买内容</a></li>
+				<li class="active"><a th:if="${session.authorities!=null && session.authorities.contains('ROLE_BUYER')}"
 					   href="/finance">财务</a></li>
 				<li><a th:if="${session.authorities!=null && session.authorities.contains('ROLE_SELLER')}"
 					   href="/public">发布</a></li>
@@ -118,7 +118,8 @@
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="breadcrumb-tree">
-					<li class="active">登录</li>
+					<li><a href="/home">主页</a></li>
+					<li class="active">财务</li>
 				</ul>
 			</div>
 		</div>
@@ -130,20 +131,38 @@
 
 <!-- store products -->
 <div class="row section container">
-	<div class="col-md-4 col-md-offset-4 sign-up-card">
-		<div style="text-align: center">
-			<div id="user" style="margin-top: 60px" >
-				<form id="form" class="form-group" action="/login" method="post" onsubmit="return login()">
-					<div><input type="text" required="required" id="user-name" class="form-control" placeholder="用户名" name="username"></div>
-					<div style="padding-top: 20px"><input type="password" required="required" id="user-pwd" class="form-control" placeholder="密码" name="password"></div>
-					<div style="padding-top: 20px">
-						<input type="submit"  class="btn btn-default" value="登录">
-						<input type="reset"  class="btn btn-default" value="重置">
+	<div class="col-md-8 order-details">
+		<div class="section-title text-center">
+			<h3 class="title">财务</h3>
+		</div>
+		<div class="order-summary">
+			<div class="order-col">
+				<div><strong>内容图片</strong></div>
+				<div><strong>内容名称</strong></div>
+				<div><strong>购买时间</strong></div>
+				<div><strong>购买数量</strong></div>
+				<div><strong>购买价格</strong></div>
+			</div>
+			<div class="order-products">
+				<div th:class="'product-details order-col order-'+${interStat.index}" th:each="bundle, interStat : ${orderBundleList}">
+					<div>
+						<a target="_blank" th:href="'../detail/'+${bundle.order.getProductId()}">
+							<img alt="140x140" th:src="${bundle.product.getImageSrc()}"  style="height:100px;width:66px" />
+						</a>
 					</div>
-				</form>
+					<div th:text="${bundle.product.title}"></div>
+					<div th:text="${#dates.format(bundle.order.getDate(), 'yyyy-MM-dd HH:mm:ss')}"></div>
+					<div th:text="${bundle.order.getCount()}"></div>
+					<div th:text="${bundle.order.getPriceDone()}"></div>
+				</div>
+			</div>
+			<div class="order-col">
+				<div><strong>总计</strong></div>
+				<div><strong class="order-total" th:text="'¥'+${total}"></strong></div>
 			</div>
 		</div>
 	</div>
+	<!-- /Order Details -->
 </div>
 
 <!-- FOOTER -->
@@ -161,35 +180,19 @@
 <script src="/temp/js/bootstrap.min.js"></script>
 <script src="/temp/js/jquery.zoom.min.js"></script>
 </body>
-<script type="text/javascript" src="/temp/js/md5.js"></script>
 <script>
-    var form = document.getElementById("form");
-    var username = form['username'];
-    var password = form['password'];
-
-    function login() {
-        var subForm = new FormData();
-        subForm.append("username",username.value);
-        subForm.append("password",md5(password.value));
+    function loadCartFragment() {
         $.ajax({
-            type: "POST",
-            url:"/login",
-            data:subForm,
-            contentType: false,
-            processData: false,
+            type: "GET",
+            url:"/cartFragment",
             error: function(request) {
-                alert("登录失败");
+                alert("获取购物车失败");
             },
             success: function(msg) {
-                if (msg == 'success') {
-                    alert("登录成功");
-                    window.location.href="/home"
-                }else {
-                    alert("登录失败");
-                }
+                var cartContent = document.getElementById("cartFragment");
+                cartContent.innerHTML = msg;
             }
         });
-        return false;
     }
 </script>
 </html>

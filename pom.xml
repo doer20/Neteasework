@@ -19,6 +19,14 @@
     <modules>
         <module>config-server</module>
         <module>service-registry</module>
+        <module>turbine</module>
+        <module>hystrix-dashboard</module>
+        <module>account-service</module>
+        <module>cart-service</module>
+        <module>edge-service</module>
+        <module>order-service</module>
+        <module>payment-service</module>
+        <module>product-service</module>
     </modules>
 
     <properties>

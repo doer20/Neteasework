@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<div class="cart-list" th:each="bundle, interStat : ${bundleList}">
+    <div class="product-widget">
+        <div class="product-img">
+            <img th:src="${bundle.product.imageSrc}" alt="">
+        </div>
+        <div class="product-body">
+            <h3 class="product-name">
+                <a th:href="'detail/'+${bundle.product.productId}"
+                   th:text="${bundle.product.title}"></a>
+            </h3>
+            <h4 >
+                <span class="qty" th:text="${bundle.cart.count}+'x'"></span>
+                <span class="product-price" th:text="'¥'+${bundle.product.price}"></span>
+            </h4>
+        </div>
+    </div>
+
+</div>
+<div class="cart-summary">
+    <small th:text="${cartCount}+' Item(s) total'"></small>
+    <h5 th:text="'SUBTOTAL: ¥'+${cartSummary}"></h5>
+</div>
+<div class="cart-btns">
+    <a href="/shoppingCart">结算  <i class="fa fa-arrow-circle-right"></i></a>
+</div>
+</html>

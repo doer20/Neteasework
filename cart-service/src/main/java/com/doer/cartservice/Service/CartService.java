@@ -40,6 +40,8 @@ public class CartService {
         boolean flag = true;
         if (getItem(productId) != null){
             cartMapper.deleteByPrimaryKey(productId);
+        }else {
+            flag = false;
         }
         return flag;
     }

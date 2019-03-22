@@ -53,6 +53,14 @@ public class EdgeService {
         return jsonObject.toJSONString();
     }
 
+    public boolean deleteFile(String imgSrc) throws IOException {
+        Resource resource = new ClassPathResource("static");
+        String pathPrefix = resource.getFile().getPath();
+        File file = new File(pathPrefix+imgSrc);
+        boolean flag = file.delete();
+        return flag;
+    }
+
     public boolean buyAllInCart(){
         String user_id = "buyer";
         String resp = cartService.getCartList(0,1000);
