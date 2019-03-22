@@ -61,14 +61,13 @@
             </plugin>
         </plugins>
     </build>
-<!--
+
     <repositories>
         <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
+            <id>ali-maven</id>
+            <name>ali-maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
         </repository>
     </repositories>
--->
 
 </project>
