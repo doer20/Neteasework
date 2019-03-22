@@ -1,0 +1,15 @@
+version: "2"
+services:
+    peer1:
+        image: neteasework/service-registry:0.0.1-SNAPSHOT
+        ports:
+            - "8761:8761"
+        environment:
+            - spring.profiles.active=peer1
+    peer1:
+        image: neteasework/service-registry:0.0.1-SNAPSHOT
+        hostname: peer2
+        ports:
+            - "8762:8762"
+        environment:
+            - spring.profiles.active=peer2
