@@ -17,18 +17,6 @@ services:
         environment:
             - spring.profiles.active=peer2
         entrypoint: ["java", "-jar", "/usr/local/service-registry-0.0.1-SNAPSHOT.jar"]
-    config-server:
-        build: ./config-server
-        network_mode: "host"
-        ports:
-            - "7000:7000"
-        depends_on:
-            - peer1
-            - peer2
-        restart: always
-        volumes:
-            - "./wait-for-service.sh:/wait-for-service.sh"
-        entrypoint: ["sh", "/wait-for-service.sh", "peer2", "8762", "/usr/local/config-server-0.0.1-SNAPSHOT.jar"]
     account-service:
         build: ./account-service
         network_mode: "host"
@@ -37,11 +25,10 @@ services:
         depends_on:
             - peer1
             - peer2
-            - config-server
         restart: always
         volumes:
             - "./wait-for-service.sh:/wait-for-service.sh"
-        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "7000", "/usr/local/account-service-0.0.1-SNAPSHOT.jar"]
+        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "8762", "/usr/local/account-service-0.0.1-SNAPSHOT.jar"]
     product-service:
         build: ./product-service
         network_mode: "host"
@@ -50,12 +37,11 @@ services:
         depends_on:
             - peer1
             - peer2
-            - config-server
             - account-service
         restart: always
         volumes:
             - "./wait-for-service.sh:/wait-for-service.sh"
-        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "7000", "/usr/local/product-service-0.0.1-SNAPSHOT.jar"]
+        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "8762", "/usr/local/product-service-0.0.1-SNAPSHOT.jar"]
     cart-service:
         build: ./cart-service
         network_mode: "host"
@@ -64,12 +50,11 @@ services:
         depends_on:
             - peer1
             - peer2
-            - config-server
             - account-service
         restart: always
         volumes:
             - "./wait-for-service.sh:/wait-for-service.sh"
-        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "7000", "/usr/local/cart-service-0.0.1-SNAPSHOT.jar"]
+        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "8762", "/usr/local/cart-service-0.0.1-SNAPSHOT.jar"]
     order-service:
         build: ./order-service
         network_mode: "host"
@@ -78,12 +63,11 @@ services:
         depends_on:
             - peer1
             - peer2
-            - config-server
             - account-service
         restart: always
         volumes:
             - "./wait-for-service.sh:/wait-for-service.sh"
-        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "7000", "/usr/local/order-service-0.0.1-SNAPSHOT.jar"]
+        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "8762", "/usr/local/order-service-0.0.1-SNAPSHOT.jar"]
     payment-service:
         build: ./payment-service
         network_mode: "host"
@@ -92,12 +76,11 @@ services:
         depends_on:
             - peer1
             - peer2
-            - config-server
             - account-service
         restart: always
         volumes:
             - "./wait-for-service.sh:/wait-for-service.sh"
-        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "7000", "/usr/local/payment-service-0.0.1-SNAPSHOT.jar"] 
+        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "8762", "/usr/local/payment-service-0.0.1-SNAPSHOT.jar"] 
     edge-service:
         build: ./edge-service
         network_mode: "host"
@@ -106,7 +89,6 @@ services:
         depends_on:
             - peer1
             - peer2
-            - config-server
             - account-service
             - product-service
             - cart-service
@@ -115,7 +97,7 @@ services:
         restart: always
         volumes:
             - "./wait-for-service.sh:/wait-for-service.sh"
-        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "7000", "/usr/local/edge-service-0.0.1-SNAPSHOT.jar"]
+        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "8762", "/usr/local/edge-service-0.0.1-SNAPSHOT.jar"]
     turbine:
         build: ./turbine
         network_mode: "host"
@@ -127,7 +109,7 @@ services:
         restart: always
         volumes:
             - "./wait-for-service.sh:/wait-for-service.sh"
-        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "7000", "/usr/local/turbine-0.0.1-SNAPSHOT.jar"]
+        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "8762", "/usr/local/turbine-0.0.1-SNAPSHOT.jar"]
     hystrix-dashboard:
         build: ./hystrix-dashboard
         network_mode: "host"
@@ -139,4 +121,4 @@ services:
         restart: always
         volumes:
             - "./wait-for-service.sh:/wait-for-service.sh"
-        entrypoint: ["sh", "/wait-for-service.sh", "peer2", "8762", "/usr/local/hystrix-dashboard-0.0.1-SNAPSHOT.jar"]
+        entrypoint: ["sh", "/wait-for-service.sh", "localhost", "8762", "/usr/local/hystrix-dashboard-0.0.1-SNAPSHOT.jar"]
