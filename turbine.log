@@ -1,0 +1,157 @@
+2019-03-23 17:28:46.707  INFO 20704 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b3eb10cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-03-23 17:28:48.490  INFO 20704 --- [           main] com.doer.turbine.TurbineApplication      : The following profiles are active: default
+2019-03-23 17:28:55.722  WARN 20704 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-03-23 17:28:57.783  INFO 20704 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=20a10feb-7d30-3b41-8ffe-6dfd070727db
+2019-03-23 17:28:59.153  INFO 20704 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b3eb10cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-23 17:29:02.549  INFO 20704 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8011 (http)
+2019-03-23 17:29:03.091  INFO 20704 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-23 17:29:03.091  INFO 20704 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-23 17:29:03.176  INFO 20704 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/app/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-03-23 17:29:04.266  INFO 20704 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-23 17:29:04.266  INFO 20704 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 15375 ms
+2019-03-23 17:29:05.240  WARN 20704 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-03-23 17:29:05.240  INFO 20704 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-03-23 17:29:05.304  INFO 20704 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3fce8fd9
+2019-03-23 17:29:09.908  WARN 20704 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-03-23 17:29:09.908  INFO 20704 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-03-23 17:29:11.801  INFO 20704 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 17:29:15.125  INFO 20704 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-03-23 17:29:17.922  INFO 20704 --- [           main] o.s.c.n.turbine.SpringAggregatorFactory  : Could not find monitors: []
+2019-03-23 17:29:20.351  INFO 20704 --- [           main] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StaticListener_For_Aggregator
+2019-03-23 17:29:20.363  INFO 20704 --- [           main] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StaticListener_For_Aggregator
+2019-03-23 17:29:20.364  INFO 20704 --- [           main] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StaticListener_For_Aggregator]
+2019-03-23 17:29:20.365  INFO 20704 --- [           main] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2019-03-23 17:29:20.378  INFO 20704 --- [           main] c.n.t.discovery.InstanceObservable       : Starting InstanceObservable at frequency: 60000 millis
+2019-03-23 17:29:20.379  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 17:29:20.381  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 17:29:20.449  INFO 20704 --- [        Timer-0] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-03-23 17:29:23.400  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-03-23 17:29:31.615  INFO 20704 --- [        Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-03-23 17:29:31.741  INFO 20704 --- [        Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-03-23 17:29:43.850  INFO 20704 --- [        Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-03-23 17:29:43.870  INFO 20704 --- [        Timer-0] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-03-23 17:29:51.546  INFO 20704 --- [        Timer-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-23 17:29:53.119  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-03-23 17:29:53.121  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-03-23 17:29:53.121  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-03-23 17:29:53.122  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-03-23 17:29:53.122  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-03-23 17:29:53.122  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-03-23 17:29:53.122  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-03-23 17:30:05.139  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-03-23 17:30:05.578  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-03-23 17:30:05.930  INFO 20704 --- [        Timer-0] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-03-23 17:30:06.433  INFO 20704 --- [        Timer-0] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1553333406416 with initial instances count: 2
+2019-03-23 17:30:06.458  INFO 20704 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TURBINE-MONITOR with eureka with status UP
+2019-03-23 17:30:06.471  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: account-service
+2019-03-23 17:30:06.471  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 17:30:06.472  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: cart-service
+2019-03-23 17:30:06.472  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 17:30:06.472  INFO 20704 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1553333406472, current=UP, previous=STARTING]
+2019-03-23 17:30:06.472  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-23 17:30:06.477  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 17:30:06.490  INFO 20704 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TURBINE-MONITOR/169.254.66.60:turbine-monitor:8011: registering service...
+2019-03-23 17:30:06.479  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: order-service
+2019-03-23 17:30:06.491  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 17:30:06.556  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: payment-service
+2019-03-23 17:30:06.557  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 17:30:06.658  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: product-service
+2019-03-23 17:30:06.788  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-03-23 17:30:06.789  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 17:30:06.789  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-03-23 17:30:08.602  INFO 20704 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TURBINE-MONITOR/169.254.66.60:turbine-monitor:8011 - registration status: 204
+2019-03-23 17:30:09.641  INFO 20704 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8011 (http) with context path ''
+2019-03-23 17:30:09.672  INFO 20704 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8011
+2019-03-23 17:30:10.223  INFO 20704 --- [           main] com.doer.turbine.TurbineApplication      : Started TurbineApplication in 93.187 seconds (JVM running for 99.216)
+2019-03-23 17:30:20.403  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 17:30:20.424  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 17:30:20.430  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: account-service
+2019-03-23 17:30:20.431  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 17:30:20.431  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: cart-service
+2019-03-23 17:30:20.431  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 17:30:20.477  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-23 17:30:20.522  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 17:30:20.522  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: order-service
+2019-03-23 17:30:20.522  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 17:30:20.522  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: payment-service
+2019-03-23 17:30:20.522  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 17:30:20.522  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: product-service
+2019-03-23 17:30:20.523  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-03-23 17:30:20.523  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 17:30:20.523  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-03-23 17:31:20.388  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 17:31:20.394  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 17:31:20.400  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: account-service
+2019-03-23 17:31:20.400  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 17:31:20.401  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: cart-service
+2019-03-23 17:31:20.402  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 17:31:20.423  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-23 17:31:20.423  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 17:31:20.428  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: order-service
+2019-03-23 17:31:20.429  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 17:31:20.435  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 17:31:21.769  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 17:31:21.770  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: product-service
+2019-03-23 17:31:21.771  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 1
+2019-03-23 17:31:21.772  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 17:31:21.773  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:1, hosts down: 0
+2019-03-23 17:32:20.409  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 17:32:20.422  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 17:32:20.430  WARN 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: account-service
+2019-03-23 17:32:20.430  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 17:32:20.431  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 17:32:20.513  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 17:32:20.514  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 17:32:20.517  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 17:32:20.517  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 17:32:20.518  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 17:32:20.518  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 17:32:20.520  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 17:32:20.521  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 17:32:20.524  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-23 17:32:20.526  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 17:32:20.526  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-23 17:33:20.453  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 17:33:20.523  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 17:33:20.543  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 17:33:20.571  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 17:33:20.572  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 17:33:20.574  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 17:33:20.575  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 17:33:20.576  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 17:33:20.577  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 17:33:20.578  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 17:33:20.578  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 17:33:20.578  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 17:33:20.579  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 17:33:20.609  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 17:33:20.611  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 17:33:20.613  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 17:34:20.420  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 17:34:20.434  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 17:34:20.443  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 17:34:20.466  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 17:34:20.467  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 17:34:20.468  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 17:34:20.470  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 17:34:20.471  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 17:34:20.547  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 17:34:20.583  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 17:34:20.584  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 17:34:20.590  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 17:34:20.591  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 17:34:20.602  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 17:34:20.612  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 17:34:20.613  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 17:34:53.462  INFO 20704 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
