@@ -3,6 +3,7 @@ done=false
 host=$1
 ports=$2
 jarFile=$3
+logFile=${4}
 
 while [[ "$done" = false ]]; do
 	for port in $ports; do
@@ -16,7 +17,7 @@ while [[ "$done" = false ]]; do
 	done
 	if [[ "$done" = true ]]; then
         echo connected
-        java -jar ${jarFile}
+        java -jar ${jarFile} > ${logFile} 2>&1 &
 		break;
   fi
 	echo -n .
