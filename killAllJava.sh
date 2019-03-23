@@ -1,0 +1,1 @@
+ps -ef|grep 'java' |grep -v grep|cut -c 9-15|xargs kill -9 >/dev/null 2>&1

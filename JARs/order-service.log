@@ -1,0 +1,65 @@
+2019-03-23 19:03:51.434  INFO 24530 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$26557129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-03-23 19:03:53.381  INFO 24530 --- [           main] c.d.o.OrderServiceApplication            : No active profile set, falling back to default profiles: default
+2019-03-23 19:04:05.733  WARN 24530 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-03-23 19:04:05.953  WARN 24530 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-03-23 19:04:08.551  INFO 24530 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fba86f26-08bd-326d-8d73-a09597641bd5
+2019-03-23 19:04:10.463  INFO 24530 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a3b6e2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-23 19:04:12.894  INFO 24530 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$26557129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-23 19:04:17.233  INFO 24530 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8811 (http)
+2019-03-23 19:04:17.776  INFO 24530 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-23 19:04:17.776  INFO 24530 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-23 19:04:17.818  INFO 24530 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/app/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-03-23 19:04:19.878  INFO 24530 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-23 19:04:19.880  INFO 24530 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 25830 ms
+2019-03-23 19:04:20.292  WARN 24530 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-03-23 19:04:20.293  INFO 24530 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-03-23 19:04:20.331  INFO 24530 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@50d13246
+2019-03-23 19:04:25.478  INFO 24530 --- [           main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+log4j:WARN No appenders could be found for logger (druid.sql.Connection).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2019-03-23 19:04:30.585  INFO 24530 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+worker starting. timestamp left shift 22, datacenter id bits 5, worker id bits 5, sequence bits 12, workerid 12019-03-23 19:04:45.748  WARN 24530 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-03-23 19:04:45.752  INFO 24530 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-03-23 19:04:48.889  INFO 24530 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-23 19:04:56.574  INFO 24530 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bbbfffb5-e8df-4757-96e5-b3cd261a41f4
+
+2019-03-23 19:05:03.224  INFO 24530 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@517bd097, org.springframework.security.web.context.SecurityContextPersistenceFilter@644c78d4, org.springframework.security.web.header.HeaderWriterFilter@4a8ab068, org.springframework.security.web.authentication.logout.LogoutFilter@f19c9d2, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@a77614d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@611f8234, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f811d00, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@142eef62, org.springframework.security.web.session.SessionManagementFilter@76a82f33, org.springframework.security.web.access.ExceptionTranslationFilter@11dee337, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5471388b]
+2019-03-23 19:05:04.363  INFO 24530 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-03-23 19:05:06.797  INFO 24530 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-03-23 19:05:08.329  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-03-23 19:05:09.889  INFO 24530 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-03-23 19:05:09.890  INFO 24530 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-03-23 19:05:11.609  INFO 24530 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-03-23 19:05:11.610  INFO 24530 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-03-23 19:05:13.684  INFO 24530 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-23 19:05:13.940  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-03-23 19:05:13.940  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-03-23 19:05:13.940  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-03-23 19:05:13.951  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-03-23 19:05:13.951  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-03-23 19:05:13.951  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-03-23 19:05:13.951  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-03-23 19:05:17.043  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-03-23 19:05:17.074  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-03-23 19:05:17.138  INFO 24530 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-03-23 19:05:17.152  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1553339117148 with initial instances count: 1
+2019-03-23 19:05:17.174  INFO 24530 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2019-03-23 19:05:17.175  INFO 24530 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1553339117175, current=UP, previous=STARTING]
+2019-03-23 19:05:17.190  INFO 24530 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/169.254.66.60:order-service:8811: registering service...
+2019-03-23 19:05:17.497  INFO 24530 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/169.254.66.60:order-service:8811 - registration status: 204
+2019-03-23 19:05:17.908  INFO 24530 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8811 (http) with context path ''
+2019-03-23 19:05:17.909  INFO 24530 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8811
+2019-03-23 19:05:17.935  INFO 24530 --- [           main] c.d.o.OrderServiceApplication            : Started OrderServiceApplication in 101.535 seconds (JVM running for 106.796)

@@ -16,11 +16,13 @@ public class AccountInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws IOException {
         String authKey = FeignOauth2RequestInterceptor.AUTHORIZATION_HEADER;
         Cookie[] cookies = request.getCookies();
-        for (Cookie cookie:cookies){
-            if (authKey.equals(cookie.getName())){
-                String tokenHeader = cookie.getValue().replaceFirst("-"," ");
-                request.getSession().setAttribute(authKey,tokenHeader);
-                break;
+        if (cookies != null){
+            for (Cookie cookie:cookies){
+                if (authKey.equals(cookie.getName())){
+                    String tokenHeader = cookie.getValue().replaceFirst("-"," ");
+                    request.getSession().setAttribute(authKey,tokenHeader);
+                    break;
+                }
             }
         }
         String path = request.getServletPath();

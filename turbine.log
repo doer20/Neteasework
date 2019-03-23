@@ -981,3 +981,1046 @@ Just added and starting handler tuple: StaticListener_For_Aggregator
 2019-03-23 18:25:20.595  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
 2019-03-23 18:25:20.597  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
 2019-03-23 18:25:20.597  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:26:20.588  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:26:20.589  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:26:20.589  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:26:20.592  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:26:20.594  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:26:20.597  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:26:20.597  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:26:20.599  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:26:20.600  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:26:20.601  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:26:20.602  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:26:20.603  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:26:20.603  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:26:20.606  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:26:20.607  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:26:20.608  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:27:20.592  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:27:20.593  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:27:20.594  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:27:20.595  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:27:20.595  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:27:20.596  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:27:20.597  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:27:20.598  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:27:20.598  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:27:20.599  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:27:20.599  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:27:20.599  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:27:20.599  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:27:20.599  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:27:20.599  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:27:20.600  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:28:20.594  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:28:20.602  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:28:20.603  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:28:20.603  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:28:20.604  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:28:20.605  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:28:20.605  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:28:20.606  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:28:20.606  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:28:20.607  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:28:20.608  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:28:20.608  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:28:20.608  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:28:20.610  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:28:20.612  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:28:20.612  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:29:20.599  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:29:20.606  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:29:20.606  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:29:20.608  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:29:20.608  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:29:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:29:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:29:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:29:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:29:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:29:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:29:20.611  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:29:20.611  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:29:20.612  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:29:20.612  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:29:20.612  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:29:53.601  INFO 20704 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-23 18:30:20.602  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:30:20.603  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:30:20.604  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:30:20.606  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:30:20.607  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:30:20.608  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:30:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:30:20.610  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:30:20.610  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:30:20.614  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:30:20.616  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:30:20.621  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:30:20.622  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:30:20.624  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:30:20.626  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:30:20.626  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:31:20.604  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:31:20.606  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:31:20.608  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:31:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:31:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:31:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:31:20.609  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:31:20.610  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:31:20.610  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:31:20.611  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:31:20.612  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:31:20.613  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:31:20.613  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:31:20.616  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:31:20.616  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:31:20.616  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:32:20.606  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:32:20.613  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:32:20.613  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:32:20.614  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:32:20.614  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:32:20.614  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:32:20.615  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:32:20.616  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:32:20.618  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:32:20.619  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:32:20.619  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:32:20.620  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:32:20.620  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:32:20.621  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:32:20.623  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:32:20.625  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:33:20.613  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:33:20.620  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:33:20.620  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:33:20.624  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:33:20.625  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:33:20.627  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:33:20.628  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:33:20.628  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:33:20.630  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:33:20.632  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:33:20.632  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:33:20.634  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:33:20.636  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:33:20.637  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:33:20.639  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:33:20.640  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:34:20.614  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:34:20.616  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:34:20.620  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:34:20.624  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:34:20.625  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:34:20.627  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:34:20.627  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:34:20.628  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:34:20.628  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:34:20.631  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:34:20.631  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:34:20.632  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:34:20.633  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:34:20.634  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:34:20.635  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:34:20.636  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:34:53.615  INFO 20704 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-23 18:35:20.621  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:35:20.621  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:35:20.622  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:35:20.623  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:35:20.625  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:35:20.628  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:35:20.629  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:35:20.632  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:35:20.632  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:35:20.633  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:35:20.634  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:35:20.635  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:35:20.635  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:35:20.637  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:35:20.638  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:35:20.638  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:36:20.621  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:36:20.624  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:36:20.624  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:36:20.626  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:36:20.627  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:36:20.629  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:36:20.631  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:36:20.631  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:36:20.631  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:36:20.633  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:36:20.634  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:36:20.634  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:36:20.634  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:36:20.635  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:36:20.635  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:36:20.635  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:37:20.626  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:37:20.628  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:37:20.629  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:37:20.632  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:37:20.633  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:37:20.637  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:37:20.638  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:37:20.641  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:37:20.642  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:37:20.643  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:37:20.645  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:37:20.645  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:37:20.645  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:37:20.647  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:37:20.648  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:37:20.648  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:38:20.630  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:38:20.631  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:38:20.633  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:38:20.635  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:38:20.636  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:38:20.637  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:38:20.639  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:38:20.639  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:38:20.639  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:38:20.639  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:38:20.639  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:38:20.640  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:38:20.640  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:38:20.641  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:38:20.642  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:38:20.643  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:39:20.635  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:39:20.642  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:39:20.643  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:39:20.645  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:39:20.645  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:39:20.647  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:39:20.648  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:39:20.650  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:39:20.651  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:39:20.652  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:39:20.652  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:39:20.655  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:39:20.655  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:39:20.657  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:39:20.658  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:39:20.659  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:39:53.629  INFO 20704 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-23 18:40:20.636  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:40:20.639  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:40:20.639  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:40:20.641  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:40:20.641  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:40:20.642  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:40:20.643  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:40:20.645  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:40:20.646  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:40:20.647  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:40:20.647  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:40:20.648  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:40:20.649  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:40:20.651  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:40:20.654  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:40:20.654  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:41:20.639  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:41:20.641  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:41:20.641  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:41:20.642  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:41:20.642  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:41:20.642  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:41:20.643  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:41:20.643  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:41:20.644  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:41:20.646  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:41:20.646  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:41:20.648  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:41:20.648  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:41:20.649  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:41:20.650  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:41:20.650  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:42:20.642  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:42:20.651  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:42:20.652  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:42:20.654  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:42:20.655  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:42:20.657  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:42:20.658  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:42:20.661  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:42:20.662  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:42:20.665  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:42:20.665  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:42:20.666  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:42:20.668  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:42:20.670  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:42:20.674  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:42:20.674  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:43:20.647  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:43:20.650  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:43:20.650  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:43:20.653  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:43:20.653  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:43:20.654  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:43:20.655  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:43:20.658  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:43:20.659  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:43:20.660  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:43:20.661  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:43:20.662  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:43:20.664  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:43:20.665  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:43:20.667  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:43:20.667  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:44:20.652  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:44:20.655  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:44:20.656  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:44:20.658  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:44:20.659  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:44:20.660  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:44:20.660  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:44:20.661  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:44:20.661  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:44:20.661  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:44:20.661  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:44:20.663  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:44:20.664  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:44:20.666  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:44:20.667  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:44:20.668  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:44:53.639  INFO 20704 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-23 18:45:20.654  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:45:20.661  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:45:20.661  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:45:20.664  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:45:20.664  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:45:20.664  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:45:20.666  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:45:20.669  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:45:20.669  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:45:20.671  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:45:20.671  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:45:20.674  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:45:20.674  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:45:20.674  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:45:20.675  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:45:20.675  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:46:20.658  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:46:20.663  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:46:20.664  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:46:20.664  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:46:20.665  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:46:20.666  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:46:20.666  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:46:20.668  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:46:20.673  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:46:20.674  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:46:20.674  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:46:20.674  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:46:20.675  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:46:20.676  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:46:20.679  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:46:20.680  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:47:20.665  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:47:20.666  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:47:20.669  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:47:20.671  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:47:20.671  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:47:20.671  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:47:20.671  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:47:20.673  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:47:20.674  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:47:20.675  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:47:20.675  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:47:20.675  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:47:20.676  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:47:20.676  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:47:20.678  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:47:20.678  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:48:20.666  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:48:20.669  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:48:20.671  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:48:20.672  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:48:20.672  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:48:20.674  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:48:20.674  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:48:20.677  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:48:20.678  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:48:20.678  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:48:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:48:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:48:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:48:20.680  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:48:20.683  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:48:20.684  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:49:20.674  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:49:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:49:20.681  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:49:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:49:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:49:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:49:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:49:20.684  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:49:20.684  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:49:20.685  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:49:20.685  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:49:20.688  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:49:20.689  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:49:20.690  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:49:20.690  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:49:20.690  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:49:53.647  INFO 20704 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-23 18:50:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:50:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:50:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:50:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:50:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:50:20.683  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:50:20.683  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:50:20.683  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:50:20.683  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:50:20.684  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:50:20.685  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:50:20.685  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:50:20.686  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:50:20.686  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:50:20.686  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:50:20.686  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:51:20.677  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:51:20.679  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:51:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:51:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:51:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:51:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:51:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:51:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:51:20.680  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:51:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:51:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:51:20.683  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:51:20.683  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:51:20.685  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:51:20.686  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:51:20.686  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:52:20.682  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:52:20.684  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:52:20.684  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:52:20.685  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:52:20.685  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:52:20.685  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:52:20.686  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:52:20.687  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:52:20.688  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:52:20.689  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:52:20.690  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:52:20.690  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:52:20.691  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:52:20.693  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:52:20.693  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:52:20.693  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:53:20.689  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:53:20.690  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:53:20.691  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:53:20.693  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:53:20.693  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:53:20.696  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:53:20.697  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:53:20.700  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:53:20.700  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:53:20.702  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:53:20.702  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:53:20.702  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:53:20.704  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:53:20.705  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:53:20.708  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:53:20.708  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:54:20.692  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:54:20.697  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:54:20.699  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:54:20.702  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:54:20.702  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:54:20.704  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:54:20.704  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:54:20.706  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:54:20.706  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:54:20.706  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:54:20.707  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:54:20.707  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:54:20.707  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:54:20.707  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:54:20.708  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:54:20.709  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:54:53.656  INFO 20704 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-23 18:55:20.694  INFO 20704 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-23 18:55:20.701  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-23 18:55:20.701  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-23 18:55:20.703  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-23 18:55:20.703  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-23 18:55:20.705  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-23 18:55:20.705  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: edge-service, size=1
+2019-03-23 18:55:20.706  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-23 18:55:20.706  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-23 18:55:20.706  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-23 18:55:20.706  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-23 18:55:20.708  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-23 18:55:20.710  INFO 20704 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-23 18:55:20.713  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 6
+2019-03-23 18:55:20.714  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-23 18:55:20.714  INFO 20704 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:6, hosts down: 0
+2019-03-23 18:55:39.379 ERROR 20704 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://peer1:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_192]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_192]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_192]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 29 common frames omitted
+
+2019-03-23 18:55:39.394  WARN 20704 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-03-23 18:55:39.379 ERROR 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://peer1:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_192]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_192]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_192]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 26 common frames omitted
+
+2019-03-23 18:55:39.396  WARN 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-03-23 18:55:39.399 ERROR 20704 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://peer1:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_192]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_192]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_192]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 30 common frames omitted
+
+2019-03-23 18:55:39.409  WARN 20704 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-03-23 18:55:39.402 ERROR 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://peer1:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_192]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_192]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_192]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 27 common frames omitted
+
+2019-03-23 18:55:39.411  WARN 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-03-23 18:55:39.418  INFO 20704 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution succeeded on retry #2
+2019-03-23 18:55:39.425  INFO 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution succeeded on retry #2
+2019-03-23 18:56:09.435 ERROR 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://peer2:8762/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_192]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_192]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_192]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 26 common frames omitted
+
+2019-03-23 18:56:09.445  WARN 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-03-23 18:56:09.437 ERROR 20704 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://peer2:8762/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_192]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_192]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_192]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 29 common frames omitted
+
+2019-03-23 18:56:09.447  WARN 20704 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-03-23 18:56:09.452 ERROR 20704 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://peer1:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_192]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_192]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_192]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 30 common frames omitted
+
+2019-03-23 18:56:09.458  WARN 20704 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-03-23 18:56:09.453 ERROR 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://peer1:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_192]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_192]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_192]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 27 common frames omitted
+
+2019-03-23 18:56:09.462  WARN 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-03-23 18:56:09.471 ERROR 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://peer2:8762/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_192]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_192]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_192]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 27 common frames omitted
+
+2019-03-23 18:56:09.472  WARN 20704 --- [tbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-03-23 18:56:09.473 ERROR 20704 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TURBINE-MONITOR/169.254.66.60:turbine-monitor:8011 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Retry limit reached; giving up on completing the request
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:139) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-23 18:56:09.471 ERROR 20704 --- [freshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://peer2:8762/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar!/:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_192]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_192]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_192]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_192]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.7.jar!/:4.5.7]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 30 common frames omitted
+
+2019-03-23 18:56:09.478  WARN 20704 --- [freshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019-03-23 18:56:09.478 ERROR 20704 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TURBINE-MONITOR/169.254.66.60:turbine-monitor:8011 - was unable to refresh its cache! status = Retry limit reached; giving up on completing the request
+
+com.netflix.discovery.shared.transport.TransportException: Retry limit reached; giving up on completing the request
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:139) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar!/:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar!/:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_192]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
