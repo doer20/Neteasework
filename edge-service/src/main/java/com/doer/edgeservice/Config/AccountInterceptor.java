@@ -30,9 +30,8 @@ public class AccountInterceptor implements HandlerInterceptor {
                 || path.startsWith("/home")
                 || path.startsWith("/error")
                 || path.startsWith("/detail")
+                || path.startsWith("/upload")
                 || path.startsWith("/temp")
-                || path.startsWith("/js")
-                || path.startsWith("/css")
                 || path.startsWith("/img")) {
             return true;
         }

@@ -6,8 +6,7 @@ import com.doer.edgeservice.Entities.CartProductBundle;
 import com.doer.edgeservice.Entities.Order;
 import com.doer.edgeservice.Entities.Product;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import com.alibaba.fastjson.JSON;
 import org.springframework.util.FileCopyUtils;
@@ -34,18 +33,29 @@ public class EdgeService {
     @Autowired
     private PaymentService paymentService;
 
+    @Value("${file.staticAccessPath}")
+    private String staticAccessPath;
+    @Value("${file.uploadFolder}")
+    private String uploadFolder;
+
     public String handleFileUpload(MultipartFile file) throws IOException {
         JSONObject jsonObject = new JSONObject();
         if (file.isEmpty()){
             jsonObject.put("status","fail");
         }else {
             byte[] bytes = file.getBytes();
-            Resource resource = new ClassPathResource("static/img");
             String fileName = String.valueOf(System.currentTimeMillis());
-            String pathPrefix = resource.getFile().getPath()+"/";
-            String filePrefix = "/"+resource.getFilename()+"/";
+            String pathPrefix = uploadFolder;
+            String filePrefix = staticAccessPath.substring(0,staticAccessPath.length()-2);
             String filePostfix = file.getOriginalFilename().substring(file.getOriginalFilename().indexOf("."));
+            File folder = new File(uploadFolder);
+            if (!folder.exists()){
+                folder.mkdirs();
+            }
             File fileToSave = new File(pathPrefix+fileName+filePostfix);
+            if (!fileToSave.exists()){
+                fileToSave.createNewFile();
+            }
             FileCopyUtils.copy(bytes, fileToSave);
             jsonObject.put("status","success");
             jsonObject.put("path",filePrefix+fileName+filePostfix);
@@ -54,8 +64,9 @@ public class EdgeService {
     }
 
     public boolean deleteFile(String imgSrc) throws IOException {
-        Resource resource = new ClassPathResource("static");
-        String pathPrefix = resource.getFile().getPath();
+        String pathPrefix = uploadFolder;
+        String filePrefix = staticAccessPath.substring(0,staticAccessPath.length()-2);
+        imgSrc = imgSrc.replaceAll(filePrefix,"");
         File file = new File(pathPrefix+imgSrc);
         boolean flag = file.delete();
         return flag;

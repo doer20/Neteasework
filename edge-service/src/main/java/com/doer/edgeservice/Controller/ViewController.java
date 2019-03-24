@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.doer.edgeservice.Entities.*;
 import com.doer.edgeservice.Service.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -36,6 +37,9 @@ public class ViewController {
 
     @Autowired
     private EdgeService edgeService;
+
+    @Value("${file.staticAccessPath}")
+    private String staticAccessPath;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String loginPage(){
@@ -99,11 +103,15 @@ public class ViewController {
 
     @ResponseBody
     @RequestMapping(value = "/deleteUnsold",method = RequestMethod.POST)
-    public String deleteUnsold(String productId){
+    public String deleteUnsold(String productId) throws IOException {
+        Product originProduct = JSON.parseObject(productService.getProduct(productId),Product.class);
         String productMsg = productService.deleteUnsoldProduct(productId);
         boolean deleteProductFlag = JSON.parseObject(productMsg).getBoolean("status");
         JSONObject res = new JSONObject();
         res.put("deleteProductFlag",deleteProductFlag);
+        if (deleteProductFlag){
+            edgeService.deleteFile(originProduct.getImageSrc());
+        }
         String cartMsg = cartService.delete(productId);
         boolean deleteCartFlag = JSON.parseObject(cartMsg).getBoolean("status");
         res.put("deleteCartFlag",deleteCartFlag);

@@ -12,9 +12,8 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
                 .antMatchers(
                 "/list**",
                 "/add**",
-                "/increase**",
+                "/increase**", "/detail**",
                 "/decrease**").hasRole("BUYER")
-                .antMatchers(
-                "/detail**").hasRole("ADMIN").anyRequest().authenticated();
+                .anyRequest().authenticated();
     }
 }

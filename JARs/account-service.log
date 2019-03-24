@@ -1,4 +1,4 @@
-2019-03-23 19:03:52.572  INFO 24521 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f3fe9d60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-24 01:39:19.464  INFO 28353 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$84afcc67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -8,57 +8,213 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.3.RELEASE)
 
-2019-03-23 19:03:55.327  INFO 24521 --- [           main] c.d.a.AccountServiceApplication          : No active profile set, falling back to default profiles: default
-2019-03-23 19:04:10.134  WARN 24521 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-03-23 19:04:10.340  WARN 24521 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2019-03-23 19:04:13.798  INFO 24521 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=26fddf36-c5ee-3c68-9e54-689db845bc78
-2019-03-23 19:04:16.134  INFO 24521 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7e49a63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-23 19:04:20.035  INFO 24521 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f3fe9d60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-03-23 19:04:26.399  INFO 24521 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8701 (http)
-2019-03-23 19:04:26.881  INFO 24521 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-03-23 19:04:26.882  INFO 24521 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-03-23 19:04:26.907  INFO 24521 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/app/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-03-23 19:04:28.074  INFO 24521 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-03-23 19:04:28.074  INFO 24521 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 32385 ms
-2019-03-23 19:04:28.368  WARN 24521 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-03-23 19:04:28.369  INFO 24521 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-03-23 19:04:28.553  INFO 24521 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@65a15628
-2019-03-23 19:04:33.108  INFO 24521 --- [           main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-03-24 01:39:21.941  INFO 28353 --- [           main] c.d.a.AccountServiceApplication          : No active profile set, falling back to default profiles: default
+2019-03-24 01:39:34.682  WARN 28353 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-03-24 01:39:35.107  WARN 28353 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-03-24 01:39:38.412  INFO 28353 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=26fddf36-c5ee-3c68-9e54-689db845bc78
+2019-03-24 01:39:47.043  INFO 28353 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6895c96a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-24 01:39:54.686  INFO 28353 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$84afcc67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-24 01:40:00.338  INFO 28353 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8701 (http)
+2019-03-24 01:40:00.546  INFO 28353 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-24 01:40:00.547  INFO 28353 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-24 01:40:00.569  INFO 28353 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/app/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-03-24 01:40:02.025  INFO 28353 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-24 01:40:02.026  INFO 28353 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 39631 ms
+2019-03-24 01:40:02.076  WARN 28353 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-03-24 01:40:02.077  INFO 28353 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-03-24 01:40:02.392  INFO 28353 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@52c3cb31
+2019-03-24 01:40:05.978  INFO 28353 --- [           main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
 Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
 log4j:WARN No appenders could be found for logger (druid.sql.Connection).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-2019-03-23 19:04:42.063  INFO 24521 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-03-23 19:05:05.863  INFO 24521 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ba534b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@277f7dd3, org.springframework.security.web.header.HeaderWriterFilter@350ec41e, org.springframework.security.web.authentication.logout.LogoutFilter@1c55f277, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58bf8650, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2364305a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@292d1c71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f0ca692, org.springframework.security.web.session.SessionManagementFilter@71984c3, org.springframework.security.web.access.ExceptionTranslationFilter@6b54655f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3fc9dfc5]
-2019-03-23 19:05:06.180  INFO 24521 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@346939bf, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e3f95fe, org.springframework.security.web.header.HeaderWriterFilter@427b5f92, org.springframework.security.web.authentication.logout.LogoutFilter@65aa6596, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@419a20a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34625ccd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c7d121c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bf3798b, org.springframework.security.web.session.SessionManagementFilter@24bdb479, org.springframework.security.web.access.ExceptionTranslationFilter@1ddae9b5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ce61929]
-2019-03-23 19:05:06.218  INFO 24521 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48c35007, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cd201a8, org.springframework.security.web.header.HeaderWriterFilter@1c9f0a20, org.springframework.security.web.csrf.CsrfFilter@659eef7, org.springframework.security.web.authentication.logout.LogoutFilter@31e3250d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18245eb0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@f74e835, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@72a85671, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@24fb6a80, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7db82169, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1992eaf4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6722db6e, org.springframework.security.web.session.SessionManagementFilter@55787112, org.springframework.security.web.access.ExceptionTranslationFilter@2488b073, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7383eae2]
-2019-03-23 19:05:06.750  WARN 24521 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2019-03-23 19:05:06.751  INFO 24521 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2019-03-23 19:05:08.251  INFO 24521 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-03-23 19:05:09.466  WARN 24521 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-03-23 19:05:13.548  INFO 24521 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-03-23 19:05:16.825  INFO 24521 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2019-03-23 19:05:17.613  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2019-03-23 19:05:19.775  INFO 24521 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2019-03-23 19:05:19.800  INFO 24521 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2019-03-23 19:05:21.216  INFO 24521 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2019-03-23 19:05:21.216  INFO 24521 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2019-03-23 19:05:23.238  INFO 24521 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2019-03-23 19:05:23.382  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2019-03-23 19:05:23.382  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2019-03-23 19:05:23.382  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2019-03-23 19:05:23.382  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2019-03-23 19:05:23.382  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2019-03-23 19:05:23.382  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2019-03-23 19:05:23.382  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2019-03-23 19:05:24.736  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2019-03-23 19:05:24.744  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2019-03-23 19:05:24.748  INFO 24521 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2019-03-23 19:05:24.755  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1553339124752 with initial instances count: 1
-2019-03-23 19:05:24.773  INFO 24521 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNT-SERVICE with eureka with status UP
-2019-03-23 19:05:24.774  INFO 24521 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1553339124774, current=UP, previous=STARTING]
-2019-03-23 19:05:24.777  INFO 24521 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701: registering service...
-2019-03-23 19:05:24.873  INFO 24521 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701 - registration status: 204
-2019-03-23 19:05:24.991  INFO 24521 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8701 (http) with context path ''
-2019-03-23 19:05:24.993  INFO 24521 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8701
-2019-03-23 19:05:25.003  INFO 24521 --- [           main] c.d.a.AccountServiceApplication          : Started AccountServiceApplication in 107.991 seconds (JVM running for 113.999)
+2019-03-24 01:40:11.164  INFO 28353 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-24 01:40:28.339  INFO 28353 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6731787b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f603e89, org.springframework.security.web.header.HeaderWriterFilter@5b080f3a, org.springframework.security.web.authentication.logout.LogoutFilter@6c8bca63, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3fc9dfc5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@350ec41e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@165b2f7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16f7b4af, org.springframework.security.web.session.SessionManagementFilter@6b54655f, org.springframework.security.web.access.ExceptionTranslationFilter@878452d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64df9a61]
+2019-03-24 01:40:28.364  INFO 28353 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67389cb8, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a66a204, org.springframework.security.web.header.HeaderWriterFilter@4e517165, org.springframework.security.web.authentication.logout.LogoutFilter@42f3156d, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@427b5f92, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5860f3d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d7f7be7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@419a20a6, org.springframework.security.web.session.SessionManagementFilter@44e3760b, org.springframework.security.web.access.ExceptionTranslationFilter@2cb3d0f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65aa6596]
+2019-03-24 01:40:28.630  INFO 28353 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19fe4644, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c6daf0, org.springframework.security.web.header.HeaderWriterFilter@1991f767, org.springframework.security.web.csrf.CsrfFilter@f6c03cb, org.springframework.security.web.authentication.logout.LogoutFilter@55787112, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3276732, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@162be91c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@21d8bcbe, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@31e3250d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10650953, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@659eef7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5be067de, org.springframework.security.web.session.SessionManagementFilter@768ccdc5, org.springframework.security.web.access.ExceptionTranslationFilter@18518ccf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f74e835]
+2019-03-24 01:40:28.722  WARN 28353 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-03-24 01:40:28.722  INFO 28353 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-03-24 01:40:30.355  INFO 28353 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-24 01:40:31.461  WARN 28353 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-03-24 01:40:35.667  INFO 28353 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-03-24 01:40:37.646  INFO 28353 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-03-24 01:40:38.003  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-03-24 01:40:39.657  INFO 28353 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-03-24 01:40:39.658  INFO 28353 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-03-24 01:40:40.821  INFO 28353 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-03-24 01:40:40.821  INFO 28353 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-03-24 01:40:41.904  INFO 28353 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 01:40:41.952  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-03-24 01:40:41.952  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-03-24 01:40:41.952  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-03-24 01:40:41.953  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-03-24 01:40:41.953  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-03-24 01:40:41.953  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-03-24 01:40:41.953  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-03-24 01:40:42.817  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-03-24 01:40:42.821  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-03-24 01:40:42.825  INFO 28353 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-03-24 01:40:42.831  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1553362842828 with initial instances count: 4
+2019-03-24 01:40:42.837  INFO 28353 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNT-SERVICE with eureka with status UP
+2019-03-24 01:40:42.838  INFO 28353 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1553362842838, current=UP, previous=STARTING]
+2019-03-24 01:40:42.840  INFO 28353 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701: registering service...
+2019-03-24 01:40:42.901  INFO 28353 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701 - registration status: 204
+2019-03-24 01:40:43.026  INFO 28353 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8701 (http) with context path ''
+2019-03-24 01:40:43.027  INFO 28353 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8701
+2019-03-24 01:40:43.081  INFO 28353 --- [           main] c.d.a.AccountServiceApplication          : Started AccountServiceApplication in 94.129 seconds (JVM running for 99.914)
+2019-03-24 01:41:58.986  INFO 28353 --- [nio-8701-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-24 01:41:58.988  INFO 28353 --- [nio-8701-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-24 01:41:59.103  INFO 28353 --- [nio-8701-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 115 ms
+2019-03-24 01:45:41.984  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 01:50:42.022  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 01:55:42.054  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:00:42.067  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:05:42.085  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:10:42.100  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:15:42.116  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:20:42.139  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:25:42.158  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:30:42.174  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:35:42.190  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:40:42.206  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:45:42.227  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:50:42.241  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 02:50:55.726  INFO 28353 --- [nio-8701-exec-9] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token 4047f91a-386e-44cb-b7c3-9f998f97cb98
+2019-03-24 02:50:56.878  WARN 28353 --- [nio-8701-exec-8] o.s.s.o.provider.endpoint.TokenEndpoint  : Handling error: DuplicateKeyException, PreparedStatementCallback; SQL [insert into oauth_access_token (token_id, token, authentication_id, user_name, client_id, authentication, refresh_token) values (?, ?, ?, ?, ?, ?, ?)]; Duplicate entry 'a4941310c0fba2a64e444ab953d6a0a0' for key 'PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'a4941310c0fba2a64e444ab953d6a0a0' for key 'PRIMARY'
+2019-03-24 02:55:42.273  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:00:42.282  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:05:42.302  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:10:42.328  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:15:42.343  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:20:42.352  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:25:42.364  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:30:42.373  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:35:42.382  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:40:42.391  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:45:42.400  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:50:42.401  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 03:55:42.406  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:00:42.413  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:05:42.430  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:10:42.450  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:15:42.460  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:20:42.470  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:25:42.486  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:30:42.490  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:35:42.501  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:40:42.516  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:45:42.529  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:50:42.545  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 04:55:42.559  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:00:42.563  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:05:42.579  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:10:42.594  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:15:42.606  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:20:42.622  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:25:42.640  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:30:42.647  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:35:42.656  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:40:42.663  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:45:42.677  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:50:42.685  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 05:55:42.689  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:00:42.695  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:05:42.708  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:10:42.720  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:15:42.732  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:20:42.738  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:25:42.751  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:30:42.771  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:35:42.783  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:40:42.793  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:45:42.800  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:50:42.813  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 06:55:42.834  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:00:42.843  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:05:42.853  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:10:42.871  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:15:42.877  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:20:42.884  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:25:42.917  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:30:42.930  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:35:42.936  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:40:42.942  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:45:42.952  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:50:42.967  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 07:55:42.981  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:00:42.989  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:05:43.001  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:10:43.005  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:15:43.012  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:20:43.023  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:25:43.040  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:30:43.052  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:35:43.055  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:40:43.058  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:45:43.069  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:50:43.076  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 08:55:43.083  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:00:43.092  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:05:43.103  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:10:43.112  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:15:43.121  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:20:43.130  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:25:43.139  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:30:43.152  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:35:43.162  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:40:43.174  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:45:43.178  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:50:43.188  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 09:55:43.194  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:00:43.201  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:05:43.214  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:10:43.225  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:15:43.237  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:20:43.246  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:25:43.254  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:30:43.266  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:35:43.276  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:40:43.288  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:45:43.299  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:50:43.312  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 10:55:43.327  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:00:43.329  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:05:43.334  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:10:43.344  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:15:43.356  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:20:43.373  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:25:43.390  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:30:43.408  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:35:43.413  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:40:43.424  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:45:43.438  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:50:43.449  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 11:55:43.458  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:00:43.470  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:05:43.475  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:10:43.478  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:15:43.501  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:20:43.519  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:25:43.537  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:30:43.552  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:35:43.560  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:40:43.575  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:45:43.580  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:50:43.590  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 12:55:43.597  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:00:43.618  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:05:43.625  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:10:43.632  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:15:43.651  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:20:43.691  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:25:43.705  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:30:43.713  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:35:43.730  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:40:43.751  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:45:43.774  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:50:43.783  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:55:43.826  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 13:58:04.192  INFO 28353 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701 - Re-registering apps/ACCOUNT-SERVICE
+2019-03-24 13:58:04.218  INFO 28353 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701: registering service...
+2019-03-24 13:58:04.385  INFO 28353 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701 - registration status: 204
+2019-03-24 14:00:43.837  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
