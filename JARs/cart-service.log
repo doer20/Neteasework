@@ -370,3 +370,6 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6
 2019-03-24 13:50:40.459  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-03-24 13:55:40.490  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-03-24 14:00:40.523  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:05:40.548  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:10:40.571  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:15:40.591  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -204,3 +204,6 @@ Using generated security password: bc8f8197-9860-4e56-8d1a-26d4b6743333
 2019-03-24 13:50:28.108  INFO 28365 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-03-24 13:55:28.140  INFO 28365 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-03-24 14:00:28.159  INFO 28365 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:05:28.186  INFO 28365 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:10:28.230  INFO 28365 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:15:28.258  INFO 28365 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

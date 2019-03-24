@@ -218,3 +218,6 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 2019-03-24 13:58:04.218  INFO 28353 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701: registering service...
 2019-03-24 13:58:04.385  INFO 28353 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701 - registration status: 204
 2019-03-24 14:00:43.837  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:05:43.855  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:10:43.894  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:15:43.921  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
