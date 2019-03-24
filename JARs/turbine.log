@@ -12339,3 +12339,829 @@ Just added and starting handler tuple: StaticListener_For_Aggregator
 2019-03-24 14:17:13.479  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
 2019-03-24 14:17:13.480  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
 2019-03-24 14:17:13.482  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:18:13.471  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:18:13.473  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:18:13.473  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:18:13.474  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:18:13.474  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:18:13.474  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:18:13.474  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:18:13.474  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:18:13.475  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:18:13.476  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:18:13.476  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:18:13.476  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:18:13.477  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:18:13.477  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:18:13.478  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:18:13.478  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:19:13.474  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:19:13.480  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:19:13.480  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:19:13.481  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:19:13.482  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:19:13.483  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:19:13.485  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:19:13.486  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:19:13.486  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:19:13.487  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:19:13.487  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:19:13.487  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:19:13.488  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:19:13.488  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:19:13.490  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:19:13.490  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:20:13.477  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:20:13.479  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:20:13.479  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:20:13.480  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:20:13.480  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:20:13.480  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:20:13.480  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:20:13.480  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:20:13.480  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:20:13.480  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:20:13.480  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:20:13.481  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:20:13.481  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:20:13.481  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:20:13.482  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:20:13.482  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:20:19.129  INFO 28374 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:21:13.481  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:21:13.482  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:21:13.482  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:21:13.483  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:21:13.484  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:21:13.484  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:21:13.484  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:21:13.485  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:21:13.485  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:21:13.485  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:21:13.486  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:21:13.486  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:21:13.486  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:21:13.486  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:21:13.488  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:21:13.489  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:22:13.483  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:22:13.490  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:22:13.490  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:22:13.491  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:22:13.491  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:22:13.491  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:22:13.491  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:22:13.491  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:22:13.491  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:22:13.491  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:22:13.491  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:22:13.492  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:22:13.493  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:22:13.494  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:22:13.495  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:22:13.495  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:23:13.488  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:23:13.497  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:23:13.497  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:23:13.497  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:23:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:23:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:23:13.498  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:23:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:23:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:23:13.500  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:23:13.500  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:23:13.500  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:23:13.501  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:23:13.502  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:23:13.503  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:23:13.505  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:24:13.489  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:24:13.491  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:24:13.492  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:24:13.493  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:24:13.493  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:24:13.493  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:24:13.494  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:24:13.494  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:24:13.494  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:24:13.494  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:24:13.494  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:24:13.495  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:24:13.496  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:24:13.497  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:24:13.498  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:24:13.499  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:25:13.495  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:25:13.496  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:25:13.497  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:25:13.497  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:25:13.497  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:25:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:25:13.498  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:25:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:25:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:25:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:25:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:25:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:25:13.498  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:25:13.499  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:25:13.500  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:25:13.500  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:25:19.140  INFO 28374 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:26:13.506  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:26:13.507  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:26:13.508  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:26:13.508  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:26:13.508  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:26:13.509  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:26:13.510  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:26:13.510  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:26:13.510  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:26:13.510  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:26:13.510  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:26:13.510  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:26:13.510  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:26:13.510  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:26:13.513  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:26:13.513  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:27:13.513  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:27:13.515  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:27:13.515  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:27:13.516  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:27:13.516  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:27:13.516  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:27:13.516  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:27:13.516  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:27:13.516  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:27:13.516  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:27:13.516  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:27:13.517  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:27:13.517  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:27:13.517  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:27:13.518  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:27:13.518  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:28:13.518  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:28:13.525  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:28:13.525  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:28:13.526  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:28:13.527  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:28:13.528  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:28:13.528  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:28:13.528  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:28:13.528  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:28:13.530  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:28:13.533  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:28:13.534  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:28:13.535  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:28:13.535  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:28:13.536  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:28:13.536  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:29:13.520  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:29:13.520  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:29:13.521  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:29:13.522  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:29:13.522  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:29:13.523  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:29:13.524  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:29:13.524  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:29:13.524  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:29:13.525  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:29:13.525  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:29:13.526  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:29:13.526  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:29:13.527  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:29:13.528  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:29:13.528  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:30:13.525  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:30:13.526  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:30:13.527  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:30:13.528  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:30:13.528  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:30:13.528  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:30:13.529  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:30:13.529  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:30:13.530  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:30:13.531  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:30:13.531  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:30:13.531  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:30:13.531  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:30:13.532  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:30:13.533  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:30:13.533  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:30:19.163  INFO 28374 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:31:13.530  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:31:13.537  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:31:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:31:13.541  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:31:13.542  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:31:13.546  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:31:13.546  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:31:13.547  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:31:13.548  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:31:13.550  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:31:13.551  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:31:13.553  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:31:13.553  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:31:13.556  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:31:13.559  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:31:13.561  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:32:13.534  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:32:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:32:13.539  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:32:13.542  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:32:13.543  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:32:13.544  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:32:13.545  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:32:13.545  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:32:13.546  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:32:13.546  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:32:13.546  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:32:13.546  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:32:13.547  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:32:13.547  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:32:13.547  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:32:13.547  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:33:13.537  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:33:13.537  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:33:13.537  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:33:13.538  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:33:13.538  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:34:13.542  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:34:13.543  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:34:13.543  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:34:13.552  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:34:13.552  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:34:13.552  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:34:13.552  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:34:13.553  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:34:13.553  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:34:13.553  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:34:13.554  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:34:13.554  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:34:13.554  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:34:13.554  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:34:13.555  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:34:13.555  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:35:13.545  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:35:13.547  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:35:13.547  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:35:13.550  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:35:13.550  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:35:13.550  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:35:13.551  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:35:13.551  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:35:13.551  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:35:13.551  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:35:13.551  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:35:13.552  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:35:13.553  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:35:13.553  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:35:13.555  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:35:13.556  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:35:19.172  INFO 28374 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:36:13.553  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:36:13.565  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:36:13.566  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:36:13.567  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:36:13.567  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:36:13.568  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:36:13.568  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:36:13.568  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:36:13.568  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:36:13.568  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:36:13.568  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:36:13.569  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:36:13.569  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:36:13.569  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:36:13.570  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:36:13.571  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:37:13.554  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:37:13.555  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:37:13.555  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:37:13.556  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:37:13.556  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:37:13.556  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:37:13.556  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:37:13.556  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:37:13.556  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:37:13.556  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:37:13.556  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:37:13.556  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:37:13.559  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:37:13.568  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:37:13.572  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:37:13.572  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:38:13.557  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:38:13.565  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:38:13.565  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:38:13.567  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:38:13.567  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:38:13.567  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:38:13.569  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:38:13.569  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:38:13.570  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:38:13.570  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:38:13.570  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:38:13.570  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:38:13.570  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:38:13.571  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:38:13.571  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:38:13.572  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:39:13.562  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:39:13.570  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:39:13.570  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:39:13.570  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:39:13.571  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:39:13.571  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:39:13.571  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:39:13.572  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:39:13.573  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:39:13.573  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:39:13.574  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:39:13.575  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:39:13.576  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:39:13.576  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:39:13.576  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:39:13.577  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:40:13.568  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:40:13.574  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:40:13.575  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:40:13.576  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:40:13.576  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:40:13.578  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:40:13.578  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:40:13.578  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:40:13.578  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:40:13.579  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:40:13.581  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:40:13.581  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:40:13.581  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:40:13.581  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:40:13.583  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:40:13.584  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:40:19.177  INFO 28374 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:41:13.572  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:41:13.573  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:41:13.574  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:41:13.575  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:41:13.575  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:41:13.576  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:41:13.576  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:41:13.577  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:41:13.577  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:41:13.577  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:41:13.577  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:41:13.578  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:41:13.578  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:41:13.579  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:41:13.579  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:41:13.579  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:42:13.586  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:42:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:42:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:42:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:42:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:42:13.609  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:42:13.609  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:42:13.609  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:42:13.609  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:42:13.609  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:42:13.609  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:42:13.609  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:42:13.609  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:42:13.609  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:42:13.609  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:42:13.609  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:43:13.590  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:43:13.593  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:43:13.595  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:43:13.595  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:43:13.595  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:43:13.596  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:43:13.596  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:43:13.596  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:43:13.596  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:43:13.597  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:43:13.597  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:43:13.598  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:43:13.598  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:43:13.598  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:43:13.599  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:43:13.599  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:44:13.593  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:44:13.598  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:44:13.599  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:44:13.599  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:44:13.600  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:44:13.600  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:44:13.600  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:44:13.600  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:44:13.601  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:44:13.601  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:44:13.601  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:44:13.601  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:44:13.603  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:44:13.603  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:44:13.603  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:44:13.603  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:45:13.594  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:45:13.601  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:45:13.601  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:45:13.602  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:45:13.602  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:45:13.605  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:45:13.605  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:45:13.605  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:45:13.605  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:45:13.607  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:45:13.607  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:45:13.609  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:45:13.609  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:45:13.609  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:45:13.611  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:45:13.611  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:45:19.219  INFO 28374 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:46:13.596  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:46:13.602  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:46:13.602  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:46:13.604  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:46:13.604  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:46:13.605  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:46:13.605  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:46:13.606  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:46:13.606  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:46:13.606  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:46:13.606  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:46:13.606  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:46:13.607  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:46:13.607  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:46:13.607  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:46:13.608  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:47:13.599  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:47:13.606  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:47:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:47:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:47:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:47:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:47:13.608  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:47:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:47:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:47:13.609  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:47:13.610  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:47:13.611  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:47:13.611  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:47:13.614  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:47:13.614  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:47:13.614  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:48:13.604  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:48:13.610  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:48:13.612  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:48:13.635  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:48:13.636  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:48:13.638  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:48:13.640  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:48:13.641  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:48:13.641  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:48:13.644  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:48:13.645  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:48:13.647  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:48:13.649  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:48:13.651  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:48:13.655  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:48:13.656  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:49:13.604  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:49:13.612  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:49:13.612  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:49:13.615  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:49:13.615  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:49:13.617  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:49:13.618  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:49:13.618  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:49:13.619  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:49:13.621  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:49:13.623  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:49:13.625  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:49:13.626  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:49:13.628  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:49:13.630  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:49:13.631  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:50:13.608  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:50:13.611  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:50:13.612  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:50:13.615  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:50:13.617  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:50:13.620  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:50:13.622  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:50:13.622  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:50:13.624  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:50:13.626  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:50:13.627  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:50:13.631  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:50:13.632  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:50:13.636  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:50:13.640  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:50:13.641  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:50:19.236  INFO 28374 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:51:13.615  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:51:13.617  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:51:13.618  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:51:13.618  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:51:13.618  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:51:13.619  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:51:13.621  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:51:13.621  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:51:13.622  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:51:13.624  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:51:13.625  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:51:13.627  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:51:13.628  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:51:13.630  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:51:13.633  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:51:13.634  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:52:13.614  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:52:13.622  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:52:13.623  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:52:13.627  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:52:13.628  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:52:13.630  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:52:13.630  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:52:13.631  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:52:13.631  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:52:13.632  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:52:13.633  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:52:13.634  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:52:13.634  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:52:13.637  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:52:13.637  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:52:13.637  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:53:13.620  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:53:13.627  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:53:13.627  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:53:13.628  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:53:13.628  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:53:13.628  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:53:13.628  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:53:13.629  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:53:13.630  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:53:13.632  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:53:13.633  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:53:13.634  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:53:13.634  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:53:13.634  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:53:13.635  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:53:13.635  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:54:13.620  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:54:13.620  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:54:13.620  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:54:13.622  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:54:13.623  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:54:13.623  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:54:13.624  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:54:13.624  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:54:13.625  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:54:13.626  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:54:13.626  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:54:13.627  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:54:13.627  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:54:13.627  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:54:13.627  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:54:13.627  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:55:13.621  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:55:13.622  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:55:13.622  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:55:13.622  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:55:13.623  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:55:13.624  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:55:13.624  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:55:13.624  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:55:13.624  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:55:13.625  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:55:13.625  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:55:13.626  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:55:13.627  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:55:13.628  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:55:13.629  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:55:13.629  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:55:19.245  INFO 28374 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 14:56:13.624  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:56:13.624  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:56:13.624  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:56:13.625  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:56:13.626  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:56:13.626  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:56:13.626  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:56:13.627  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:56:13.627  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:56:13.628  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:56:13.628  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:56:13.629  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:56:13.630  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:56:13.632  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:56:13.634  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:56:13.634  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:57:13.628  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:57:13.628  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:57:13.628  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:57:13.629  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:57:13.629  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:57:13.629  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:57:13.630  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:57:13.630  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:57:13.630  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:57:13.631  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:57:13.632  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:57:13.634  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:57:13.634  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:57:13.635  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:57:13.637  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:57:13.637  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:58:13.635  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:58:13.642  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:58:13.643  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:58:13.647  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:58:13.647  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:58:13.648  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:58:13.648  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:58:13.649  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:58:13.649  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:58:13.650  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:58:13.651  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:58:13.651  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:58:13.651  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:58:13.652  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:58:13.653  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:58:13.653  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 14:59:13.638  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 14:59:13.646  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 14:59:13.647  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 14:59:13.648  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 14:59:13.649  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 14:59:13.653  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 14:59:13.653  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 14:59:13.653  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 14:59:13.653  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 14:59:13.655  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 14:59:13.657  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 14:59:13.659  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 14:59:13.660  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 14:59:13.660  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 14:59:13.661  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 14:59:13.661  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 15:00:13.643  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 15:00:13.646  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 15:00:13.647  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 15:00:13.650  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 15:00:13.650  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 15:00:13.651  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 15:00:13.651  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 15:00:13.651  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 15:00:13.652  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 15:00:13.654  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 15:00:13.654  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 15:00:13.657  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 15:00:13.657  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 15:00:13.657  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 15:00:13.660  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 15:00:13.660  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 15:00:19.247  INFO 28374 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 15:01:13.646  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 15:01:13.648  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 15:01:13.649  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 15:01:13.651  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 15:01:13.652  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 15:01:13.653  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 15:01:13.655  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 15:01:13.655  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 15:01:13.656  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 15:01:13.658  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 15:01:13.660  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 15:01:13.662  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 15:01:13.662  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 15:01:13.663  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 15:01:13.667  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 15:01:13.667  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 15:02:13.652  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 15:02:13.658  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 15:02:13.659  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 15:02:13.660  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 15:02:13.660  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 15:02:13.662  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 15:02:13.663  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 15:02:13.663  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 15:02:13.664  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 15:02:13.665  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 15:02:13.666  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 15:02:13.667  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 15:02:13.667  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 15:02:13.669  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 15:02:13.670  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 15:02:13.670  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 15:03:13.657  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 15:03:13.658  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 15:03:13.659  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 15:03:13.662  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 15:03:13.663  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 15:03:13.665  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 15:03:13.666  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 15:03:13.666  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 15:03:13.666  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 15:03:13.667  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 15:03:13.667  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 15:03:13.667  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 15:03:13.667  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 15:03:13.668  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 15:03:13.670  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 15:03:13.670  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 15:04:13.659  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 15:04:13.661  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 15:04:13.662  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 15:04:13.663  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 15:04:13.664  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 15:04:13.665  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 15:04:13.666  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 15:04:13.666  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 15:04:13.666  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 15:04:13.666  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 15:04:13.666  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 15:04:13.667  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 15:04:13.667  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 15:04:13.668  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 15:04:13.668  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 15:04:13.668  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 15:05:13.667  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 15:05:13.672  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 15:05:13.674  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 15:05:13.682  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 15:05:13.682  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 15:05:13.684  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 15:05:13.686  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 15:05:13.686  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 15:05:13.686  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 15:05:13.687  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 15:05:13.689  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 15:05:13.689  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 15:05:13.689  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 15:05:13.692  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 15:05:13.700  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 15:05:13.700  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 15:05:19.255  INFO 28374 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-24 15:06:13.667  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 15:06:13.668  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 15:06:13.668  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 15:06:13.668  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 15:06:13.669  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 15:06:13.673  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 15:06:13.674  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 15:06:13.674  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 15:06:13.675  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 15:06:13.675  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 15:06:13.675  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 15:06:13.677  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 15:06:13.677  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 15:06:13.677  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 15:06:13.678  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 15:06:13.678  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 15:07:13.672  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 15:07:13.679  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 15:07:13.679  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 15:07:13.680  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 15:07:13.680  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 15:07:13.681  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 15:07:13.682  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 15:07:13.682  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 15:07:13.682  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 15:07:13.683  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 15:07:13.684  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 15:07:13.687  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 15:07:13.688  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 15:07:13.689  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 15:07:13.689  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 15:07:13.690  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
+2019-03-24 15:08:13.673  INFO 28374 --- [        Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : Fetching instance list for apps: [account-service, cart-service, edge-service, order-service, payment-service, product-service]
+2019-03-24 15:08:13.742  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: account-service
+2019-03-24 15:08:13.742  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: account-service, size=1
+2019-03-24 15:08:13.743  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: cart-service
+2019-03-24 15:08:13.743  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: cart-service, size=1
+2019-03-24 15:08:13.744  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: edge-service
+2019-03-24 15:08:13.745  WARN 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Eureka returned null for app: edge-service
+2019-03-24 15:08:13.745  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: order-service
+2019-03-24 15:08:13.745  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: order-service, size=1
+2019-03-24 15:08:13.746  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: payment-service
+2019-03-24 15:08:13.747  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: payment-service, size=1
+2019-03-24 15:08:13.747  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Fetching instances for app: product-service
+2019-03-24 15:08:13.748  INFO 28374 --- [        Timer-0] o.s.c.n.turbine.EurekaInstanceDiscovery  : Received instance list for app: product-service, size=1
+2019-03-24 15:08:13.749  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 5
+2019-03-24 15:08:13.749  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-03-24 15:08:13.749  INFO 28374 --- [        Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:5, hosts down: 0
