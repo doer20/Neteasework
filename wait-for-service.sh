@@ -16,7 +16,7 @@ while [[ "$done" = false ]]; do
 	done
 	if [[ "$done" = true ]]; then
         echo connected
-        java -jar ./JARs/${service}-0.0.1-SNAPSHOT.jar > ./JARs/${logFile}.log 2>&1 &
+        nohup java -jar ./JARs/${service}-0.0.1-SNAPSHOT.jar > ./JARs/${logFile}.log 2>&1 &
 		break;
   fi
 	echo -n .

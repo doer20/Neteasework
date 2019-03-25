@@ -1,5 +1,8 @@
 mvn package
 
+mkdir JARs
+mkdir JARs/health
+
 cp ./service-registry/target/service-registry-0.0.1-SNAPSHOT.jar ./JARs
 cp ./account-service/target/account-service-0.0.1-SNAPSHOT.jar ./JARs
 cp ./product-service/target/product-service-0.0.1-SNAPSHOT.jar ./JARs
