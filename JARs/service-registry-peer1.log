@@ -2277,3 +2277,178 @@ Caused by: java.lang.ClassNotFoundException: org.apache.catalina.core.StandardEn
 2019-03-25 14:01:07.192  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
 2019-03-25 14:02:07.193  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
 2019-03-25 14:03:07.196  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-03-25 14:03:54.014  WARN 28296 --- [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2019-03-25 14:03:55.005  INFO 28296 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:04:07.200  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-03-25 14:05:07.205  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2019-03-25 14:06:07.211  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2019-03-25 14:07:07.216  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:08:07.220  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:08:55.012  INFO 28296 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:08:57.094  INFO 28296 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 15
+2019-03-25 14:09:07.226  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2019-03-25 14:10:07.230  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-03-25 14:11:07.234  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-03-25 14:12:07.237  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-03-25 14:13:07.238  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-03-25 14:13:54.025  WARN 28296 --- [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2019-03-25 14:13:55.021  INFO 28296 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:14:07.243  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2019-03-25 14:15:07.247  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-03-25 14:16:07.252  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:16:56.105  INFO 28296 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EDGE-SERVICE/169.254.66.60:edge-service:-1 with status DOWN (replication=false)
+2019-03-25 14:16:56.113  INFO 28296 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance EDGE-SERVICE/169.254.66.60:edge-service:-1 (replication=false)
+2019-03-25 14:17:07.256  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:17:48.378 ERROR 28296 --- [nio-8761-exec-1] o.apache.coyote.http11.Http11Processor   : Error processing request
+
+java.lang.NoClassDefFoundError: org/apache/tomcat/util/http/parser/Cookie
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.parseCookieHeader(Rfc6265CookieProcessor.java:90) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.parseCookies(Request.java:3078) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.getServerCookies(Request.java:2191) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.parseSessionCookiesId(CoyoteAdapter.java:1017) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.postParseRequest(CoyoteAdapter.java:730) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:337) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:17:48.383  WARN 28296 --- [nio-8761-exec-1] o.a.catalina.connector.CoyoteAdapter     : Exception while attempting to add an entry to the access log
+
+java.lang.NoClassDefFoundError: org/apache/catalina/core/StandardEngine$NoopAccessLog
+	at org.apache.catalina.core.StandardEngine.logAccess(StandardEngine.java:319) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:490) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:438) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:18:07.257  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-03-25 14:18:19.040  INFO 28296 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TURBINE-MONITOR/169.254.66.60:turbine-monitor:8011 with status UP (replication=false)
+2019-03-25 14:18:19.345  INFO 28296 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TURBINE-MONITOR/169.254.66.60:turbine-monitor:8011 with status DOWN (replication=false)
+2019-03-25 14:18:22.381  INFO 28296 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance TURBINE-MONITOR/169.254.66.60:turbine-monitor:8011 (replication=false)
+2019-03-25 14:18:27.177  INFO 28296 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/169.254.66.60:payment-service:8831 with status UP (replication=false)
+2019-03-25 14:18:27.191  INFO 28296 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICEREGISTRY/169.254.66.60:serviceRegistry:8762 with status UP (replication=false)
+2019-03-25 14:18:27.457  INFO 28296 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICEREGISTRY/169.254.66.60:serviceRegistry:8762 with status DOWN (replication=false)
+2019-03-25 14:18:27.627  INFO 28296 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/169.254.66.60:payment-service:8831 with status DOWN (replication=false)
+2019-03-25 14:18:30.606  INFO 28296 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SERVICEREGISTRY/169.254.66.60:serviceRegistry:8762 (replication=false)
+2019-03-25 14:18:31.314  INFO 28296 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PAYMENT-SERVICE/169.254.66.60:payment-service:8831 (replication=false)
+2019-03-25 14:18:33.217  WARN 28296 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: TURBINE-MONITOR - 169.254.66.60:turbine-monitor:8011
+2019-03-25 14:18:33.219  WARN 28296 --- [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Renew): TURBINE-MONITOR - 169.254.66.60:turbine-monitor:8011
+2019-03-25 14:18:33.452  INFO 28296 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TURBINE-MONITOR/169.254.66.60:turbine-monitor:8011 with status UP (replication=false)
+2019-03-25 14:18:33.843  WARN 28296 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SERVICEREGISTRY - 169.254.66.60:serviceRegistry:8762
+2019-03-25 14:18:33.843  WARN 28296 --- [nio-8761-exec-6] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SERVICEREGISTRY - 169.254.66.60:serviceRegistry:8762
+2019-03-25 14:18:33.862  INFO 28296 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICEREGISTRY/169.254.66.60:serviceRegistry:8762 with status UP (replication=false)
+2019-03-25 14:18:34.255  INFO 28296 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICEREGISTRY/169.254.66.60:serviceRegistry:8761 - Re-registering apps/SERVICEREGISTRY
+2019-03-25 14:18:34.257  INFO 28296 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICEREGISTRY/169.254.66.60:serviceRegistry:8761: registering service...
+2019-03-25 14:18:34.280  INFO 28296 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICEREGISTRY/169.254.66.60:serviceRegistry:8761 - registration status: 204
+2019-03-25 14:18:35.129  WARN 28296 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: PAYMENT-SERVICE - 169.254.66.60:payment-service:8831
+2019-03-25 14:18:35.130  WARN 28296 --- [nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Renew): PAYMENT-SERVICE - 169.254.66.60:payment-service:8831
+2019-03-25 14:18:35.277  INFO 28296 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/169.254.66.60:payment-service:8831 with status UP (replication=false)
+2019-03-25 14:18:35.889  INFO 28296 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CART-SERVICE/169.254.66.60:cart-service:8821 with status UP (replication=false)
+2019-03-25 14:18:36.123  INFO 28296 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance EDGE-SERVICE/169.254.66.60:edge-service:8000 with status UP (replication=false)
+2019-03-25 14:18:36.165  INFO 28296 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CART-SERVICE/169.254.66.60:cart-service:8821 with status DOWN (replication=false)
+2019-03-25 14:18:36.348  INFO 28296 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/169.254.66.60:product-service:8801 with status UP (replication=false)
+2019-03-25 14:18:36.421  INFO 28296 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/169.254.66.60:order-service:8811 with status UP (replication=false)
+2019-03-25 14:18:36.438  INFO 28296 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/169.254.66.60:product-service:8801 with status DOWN (replication=false)
+2019-03-25 14:18:36.523 ERROR 28296 --- [nio-8761-exec-1] o.apache.coyote.http11.Http11Processor   : Error processing request
+
+java.lang.NoClassDefFoundError: org/apache/tomcat/util/http/parser/Cookie
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.parseCookieHeader(Rfc6265CookieProcessor.java:90) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.parseCookies(Request.java:3078) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.getServerCookies(Request.java:2191) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.parseSessionCookiesId(CoyoteAdapter.java:1017) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.postParseRequest(CoyoteAdapter.java:730) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:337) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:18:36.526  WARN 28296 --- [nio-8761-exec-1] o.a.catalina.connector.CoyoteAdapter     : Exception while attempting to add an entry to the access log
+
+java.lang.NoClassDefFoundError: org/apache/catalina/core/StandardEngine$NoopAccessLog
+	at org.apache.catalina.core.StandardEngine.logAccess(StandardEngine.java:319) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:490) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:438) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:18:36.680  INFO 28296 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/169.254.66.60:order-service:8811 with status DOWN (replication=false)
+2019-03-25 14:18:37.265  INFO 28296 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ACCOUNT-SERVICE/169.254.66.60:account-service:8701 with status UP (replication=false)
+2019-03-25 14:18:37.428  INFO 28296 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ACCOUNT-SERVICE/169.254.66.60:account-service:8701 with status DOWN (replication=false)
+2019-03-25 14:18:38.844 ERROR 28296 --- [nio-8761-exec-8] o.apache.coyote.http11.Http11Processor   : Error processing request
+
+java.lang.NoClassDefFoundError: org/apache/tomcat/util/http/parser/Cookie
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.parseCookieHeader(Rfc6265CookieProcessor.java:90) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.parseCookies(Request.java:3078) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.getServerCookies(Request.java:2191) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.parseSessionCookiesId(CoyoteAdapter.java:1017) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.postParseRequest(CoyoteAdapter.java:730) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:337) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:18:38.854  WARN 28296 --- [nio-8761-exec-8] o.a.catalina.connector.CoyoteAdapter     : Exception while attempting to add an entry to the access log
+
+java.lang.NoClassDefFoundError: org/apache/catalina/core/StandardEngine$NoopAccessLog
+	at org.apache.catalina.core.StandardEngine.logAccess(StandardEngine.java:319) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:490) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:438) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:18:39.230  INFO 28296 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance CART-SERVICE/169.254.66.60:cart-service:8821 (replication=false)
+2019-03-25 14:18:39.486  INFO 28296 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PRODUCT-SERVICE/169.254.66.60:product-service:8801 (replication=false)
+2019-03-25 14:18:39.854  INFO 28296 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ORDER-SERVICE/169.254.66.60:order-service:8811 (replication=false)
+2019-03-25 14:18:40.491  INFO 28296 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance ACCOUNT-SERVICE/169.254.66.60:account-service:8701 (replication=false)
+2019-03-25 14:18:55.028  INFO 28296 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:19:03.120  WARN 28296 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: PRODUCT-SERVICE - 169.254.66.60:product-service:8801
+2019-03-25 14:19:03.120  WARN 28296 --- [nio-8761-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Renew): PRODUCT-SERVICE - 169.254.66.60:product-service:8801
+2019-03-25 14:19:03.331  INFO 28296 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/169.254.66.60:product-service:8801 with status UP (replication=false)
+2019-03-25 14:19:04.749  WARN 28296 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CART-SERVICE - 169.254.66.60:cart-service:8821
+2019-03-25 14:19:04.750  WARN 28296 --- [nio-8761-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CART-SERVICE - 169.254.66.60:cart-service:8821
+2019-03-25 14:19:04.990  INFO 28296 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CART-SERVICE/169.254.66.60:cart-service:8821 with status UP (replication=false)
+2019-03-25 14:19:05.772  WARN 28296 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: ACCOUNT-SERVICE - 169.254.66.60:account-service:8701
+2019-03-25 14:19:05.772  WARN 28296 --- [nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Renew): ACCOUNT-SERVICE - 169.254.66.60:account-service:8701
+2019-03-25 14:19:05.901  INFO 28296 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ACCOUNT-SERVICE/169.254.66.60:account-service:8701 with status UP (replication=false)
+2019-03-25 14:19:07.063  WARN 28296 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: ORDER-SERVICE - 169.254.66.60:order-service:8811
+2019-03-25 14:19:07.063  WARN 28296 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): ORDER-SERVICE - 169.254.66.60:order-service:8811
+2019-03-25 14:19:07.233  INFO 28296 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/169.254.66.60:order-service:8811 with status UP (replication=false)
+2019-03-25 14:19:07.260  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-03-25 14:20:07.265  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2019-03-25 14:21:07.268  INFO 28296 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms

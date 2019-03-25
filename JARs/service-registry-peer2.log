@@ -2653,3 +2653,341 @@ java.lang.NoClassDefFoundError: org/apache/catalina/core/StandardEngine$NoopAcce
 2019-03-25 14:00:51.981  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
 2019-03-25 14:01:51.984  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
 2019-03-25 14:02:51.988  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:03:51.993  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:03:53.461  WARN 28297 --- [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2019-03-25 14:03:54.266  INFO 28297 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:04:51.998  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:05:52.001  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-03-25 14:06:52.006  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:07:52.007  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2019-03-25 14:08:52.012  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:08:54.272  INFO 28297 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:08:56.506  INFO 28297 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 11
+2019-03-25 14:09:52.017  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:10:52.019  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-03-25 14:11:52.023  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-03-25 14:12:52.028  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:13:52.033  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:13:53.473  WARN 28297 --- [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2019-03-25 14:13:54.281  INFO 28297 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:14:52.036  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-03-25 14:15:52.040  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2019-03-25 14:16:52.042  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2019-03-25 14:17:52.047  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:18:02.500 ERROR 28297 --- [nio-8762-exec-1] o.apache.coyote.http11.Http11Processor   : Error processing request
+
+java.lang.NoClassDefFoundError: org/apache/tomcat/util/http/parser/Cookie
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.parseCookieHeader(Rfc6265CookieProcessor.java:90) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.parseCookies(Request.java:3078) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.getServerCookies(Request.java:2191) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.parseSessionCookiesId(CoyoteAdapter.java:1017) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.postParseRequest(CoyoteAdapter.java:730) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:337) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:18:02.521  WARN 28297 --- [nio-8762-exec-1] o.a.catalina.connector.CoyoteAdapter     : Exception while attempting to add an entry to the access log
+
+java.lang.NoClassDefFoundError: org/apache/catalina/core/StandardEngine$NoopAccessLog
+	at org.apache.catalina.core.StandardEngine.logAccess(StandardEngine.java:319) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:490) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:438) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:18:23.344 ERROR 28297 --- [nio-8762-exec-7] c.n.d.provider.DiscoveryJerseyProvider   : Unexpected error occurred during de-serialization of discovery data, done connection cleanup
+2019-03-25 14:18:23.446 ERROR 28297 --- [nio-8762-exec-7] c.s.j.spi.container.ContainerResponse    : Mapped exception to response: 500 (Internal Server Error)
+
+javax.ws.rs.WebApplicationException: java.lang.NoClassDefFoundError: org/apache/tomcat/util/net/NioBlockingSelector$BlockPoller$RunnableAdd
+	at com.netflix.discovery.provider.DiscoveryJerseyProvider.readFrom(DiscoveryJerseyProvider.java:107) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.spi.container.ContainerRequest.getEntity(ContainerRequest.java:490) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.model.method.dispatch.EntityParamDispatchProvider$EntityInjectable.getValue(EntityParamDispatchProvider.java:123) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.inject.InjectableValuesProvider.getInjectableValues(InjectableValuesProvider.java:86) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$EntityParamInInvoker.getParams(AbstractResourceMethodDispatchProvider.java:153) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:203) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.SubLocatorRule.accept(SubLocatorRule.java:137) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542) [jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473) [jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419) [jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409) [jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409) [jersey-servlet-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:558) [jersey-servlet-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:927) [jersey-servlet-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:875) [jersey-servlet-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:829) [jersey-servlet-1.19.1.jar!/:1.19.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) [spring-boot-actuator-2.1.3.RELEASE.jar!/:2.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117) [spring-boot-actuator-2.1.3.RELEASE.jar!/:2.1.3.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106) [spring-boot-actuator-2.1.3.RELEASE.jar!/:2.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.lang.NoClassDefFoundError: org/apache/tomcat/util/net/NioBlockingSelector$BlockPoller$RunnableAdd
+	at org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller.add(NioBlockingSelector.java:252) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioBlockingSelector.read(NioBlockingSelector.java:186) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioSelectorPool.read(NioSelectorPool.java:222) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioSelectorPool.read(NioSelectorPool.java:203) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1197) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1140) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:729) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11InputBuffer.access$300(Http11InputBuffer.java:40) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11InputBuffer$SocketInputBuffer.doRead(Http11InputBuffer.java:1061) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.filters.ChunkedInputFilter.readBytes(ChunkedInputFilter.java:301) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.filters.ChunkedInputFilter.parseChunkHeader(ChunkedInputFilter.java:329) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.filters.ChunkedInputFilter.doRead(ChunkedInputFilter.java:164) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11InputBuffer.doRead(Http11InputBuffer.java:245) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.Request.doRead(Request.java:551) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.InputBuffer.realReadBytes(InputBuffer.java:336) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.InputBuffer.checkByteBufferEof(InputBuffer.java:632) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.InputBuffer.read(InputBuffer.java:362) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteInputStream.read(CoyoteInputStream.java:132) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._loadMore(UTF8StreamJsonParser.java:205) ~[jackson-core-2.9.8.jar!/:2.9.8]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2932) ~[jackson-core-2.9.8.jar!/:2.9.8]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:691) ~[jackson-core-2.9.8.jar!/:2.9.8]
+	at com.netflix.discovery.converters.EurekaJacksonCodec$InstanceInfoDeserializer.deserialize(EurekaJacksonCodec.java:489) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at org.springframework.cloud.netflix.eureka.server.CloudJacksonJson$CloudInstanceInfoDeserializer.deserialize(CloudJacksonJson.java:183) ~[spring-cloud-netflix-eureka-server-2.1.1.RELEASE.jar!/:2.1.1.RELEASE]
+	at org.springframework.cloud.netflix.eureka.server.CloudJacksonJson$CloudInstanceInfoDeserializer.deserialize(CloudJacksonJson.java:174) ~[spring-cloud-netflix-eureka-server-2.1.1.RELEASE.jar!/:2.1.1.RELEASE]
+	at com.fasterxml.jackson.databind.ObjectReader._unwrapAndDeserialize(ObjectReader.java:1703) ~[jackson-databind-2.9.8.jar!/:2.9.8]
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1608) ~[jackson-databind-2.9.8.jar!/:2.9.8]
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1188) ~[jackson-databind-2.9.8.jar!/:2.9.8]
+	at com.netflix.discovery.converters.EurekaJacksonCodec.readValue(EurekaJacksonCodec.java:197) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at org.springframework.cloud.netflix.eureka.server.CloudJacksonJson.decode(CloudJacksonJson.java:84) ~[spring-cloud-netflix-eureka-server-2.1.1.RELEASE.jar!/:2.1.1.RELEASE]
+	at com.netflix.discovery.provider.DiscoveryJerseyProvider.readFrom(DiscoveryJerseyProvider.java:103) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	... 64 common frames omitted
+
+2019-03-25 14:18:23.781 ERROR 28297 --- [nio-8762-exec-5] c.n.d.provider.DiscoveryJerseyProvider   : Unexpected error occurred during de-serialization of discovery data, done connection cleanup
+2019-03-25 14:18:23.787 ERROR 28297 --- [nio-8762-exec-5] c.s.j.spi.container.ContainerResponse    : Mapped exception to response: 500 (Internal Server Error)
+
+javax.ws.rs.WebApplicationException: java.lang.NoClassDefFoundError: org/apache/tomcat/util/net/NioBlockingSelector$BlockPoller$RunnableAdd
+	at com.netflix.discovery.provider.DiscoveryJerseyProvider.readFrom(DiscoveryJerseyProvider.java:107) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at com.sun.jersey.spi.container.ContainerRequest.getEntity(ContainerRequest.java:490) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.model.method.dispatch.EntityParamDispatchProvider$EntityInjectable.getValue(EntityParamDispatchProvider.java:123) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.inject.InjectableValuesProvider.getInjectableValues(InjectableValuesProvider.java:86) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$EntityParamInInvoker.getParams(AbstractResourceMethodDispatchProvider.java:153) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:203) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.SubLocatorRule.accept(SubLocatorRule.java:137) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542) [jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473) [jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419) [jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409) [jersey-server-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409) [jersey-servlet-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:558) [jersey-servlet-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:927) [jersey-servlet-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:875) [jersey-servlet-1.19.1.jar!/:1.19.1]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:829) [jersey-servlet-1.19.1.jar!/:1.19.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) [spring-boot-actuator-2.1.3.RELEASE.jar!/:2.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117) [spring-boot-actuator-2.1.3.RELEASE.jar!/:2.1.3.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106) [spring-boot-actuator-2.1.3.RELEASE.jar!/:2.1.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.5.RELEASE.jar!/:5.1.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+Caused by: java.lang.NoClassDefFoundError: org/apache/tomcat/util/net/NioBlockingSelector$BlockPoller$RunnableAdd
+	at org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller.add(NioBlockingSelector.java:252) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioBlockingSelector.read(NioBlockingSelector.java:186) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioSelectorPool.read(NioSelectorPool.java:222) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioSelectorPool.read(NioSelectorPool.java:203) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1197) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1140) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:729) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11InputBuffer.access$300(Http11InputBuffer.java:40) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11InputBuffer$SocketInputBuffer.doRead(Http11InputBuffer.java:1061) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.filters.ChunkedInputFilter.readBytes(ChunkedInputFilter.java:301) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.filters.ChunkedInputFilter.parseChunkHeader(ChunkedInputFilter.java:329) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.filters.ChunkedInputFilter.doRead(ChunkedInputFilter.java:164) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11InputBuffer.doRead(Http11InputBuffer.java:245) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.Request.doRead(Request.java:551) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.InputBuffer.realReadBytes(InputBuffer.java:336) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.InputBuffer.checkByteBufferEof(InputBuffer.java:632) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.InputBuffer.read(InputBuffer.java:362) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteInputStream.read(CoyoteInputStream.java:132) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._loadMore(UTF8StreamJsonParser.java:205) ~[jackson-core-2.9.8.jar!/:2.9.8]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2932) ~[jackson-core-2.9.8.jar!/:2.9.8]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:691) ~[jackson-core-2.9.8.jar!/:2.9.8]
+	at com.netflix.discovery.converters.EurekaJacksonCodec$InstanceInfoDeserializer.deserialize(EurekaJacksonCodec.java:489) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at org.springframework.cloud.netflix.eureka.server.CloudJacksonJson$CloudInstanceInfoDeserializer.deserialize(CloudJacksonJson.java:183) ~[spring-cloud-netflix-eureka-server-2.1.1.RELEASE.jar!/:2.1.1.RELEASE]
+	at org.springframework.cloud.netflix.eureka.server.CloudJacksonJson$CloudInstanceInfoDeserializer.deserialize(CloudJacksonJson.java:174) ~[spring-cloud-netflix-eureka-server-2.1.1.RELEASE.jar!/:2.1.1.RELEASE]
+	at com.fasterxml.jackson.databind.ObjectReader._unwrapAndDeserialize(ObjectReader.java:1703) ~[jackson-databind-2.9.8.jar!/:2.9.8]
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1608) ~[jackson-databind-2.9.8.jar!/:2.9.8]
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1188) ~[jackson-databind-2.9.8.jar!/:2.9.8]
+	at com.netflix.discovery.converters.EurekaJacksonCodec.readValue(EurekaJacksonCodec.java:197) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	at org.springframework.cloud.netflix.eureka.server.CloudJacksonJson.decode(CloudJacksonJson.java:84) ~[spring-cloud-netflix-eureka-server-2.1.1.RELEASE.jar!/:2.1.1.RELEASE]
+	at com.netflix.discovery.provider.DiscoveryJerseyProvider.readFrom(DiscoveryJerseyProvider.java:103) ~[eureka-client-1.9.8.jar!/:1.9.8]
+	... 64 common frames omitted
+
+2019-03-25 14:18:26.829  INFO 28297 --- [nio-8762-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SERVICEREGISTRY/169.254.66.60:serviceRegistry:8761 (replication=false)
+2019-03-25 14:18:33.844  INFO 28297 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICEREGISTRY/169.254.66.60:serviceRegistry:8762 - Re-registering apps/SERVICEREGISTRY
+2019-03-25 14:18:33.844  INFO 28297 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICEREGISTRY/169.254.66.60:serviceRegistry:8762: registering service...
+2019-03-25 14:18:33.865  INFO 28297 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICEREGISTRY/169.254.66.60:serviceRegistry:8762 - registration status: 204
+2019-03-25 14:18:34.255  WARN 28297 --- [io-8762-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SERVICEREGISTRY - 169.254.66.60:serviceRegistry:8761
+2019-03-25 14:18:34.255  WARN 28297 --- [io-8762-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SERVICEREGISTRY - 169.254.66.60:serviceRegistry:8761
+2019-03-25 14:18:34.274  INFO 28297 --- [nio-8762-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICEREGISTRY/169.254.66.60:serviceRegistry:8761 with status UP (replication=false)
+2019-03-25 14:18:52.050  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2019-03-25 14:18:54.287  INFO 28297 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:19:52.054  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2019-03-25 14:20:47.832 ERROR 28297 --- [nio-8762-exec-4] o.apache.coyote.http11.Http11Processor   : Error processing request
+
+java.lang.NoClassDefFoundError: org/apache/tomcat/util/http/parser/Cookie
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.parseCookieHeader(Rfc6265CookieProcessor.java:90) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.parseCookies(Request.java:3078) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.getServerCookies(Request.java:2191) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.parseSessionCookiesId(CoyoteAdapter.java:1017) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.postParseRequest(CoyoteAdapter.java:730) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:337) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:20:47.834  WARN 28297 --- [nio-8762-exec-4] o.a.catalina.connector.CoyoteAdapter     : Exception while attempting to add an entry to the access log
+
+java.lang.NoClassDefFoundError: org/apache/catalina/core/StandardEngine$NoopAccessLog
+	at org.apache.catalina.core.StandardEngine.logAccess(StandardEngine.java:319) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:490) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:438) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:20:51.262 ERROR 28297 --- [nio-8762-exec-8] o.apache.coyote.http11.Http11Processor   : Error processing request
+
+java.lang.NoClassDefFoundError: org/apache/tomcat/util/http/parser/Cookie
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.parseCookieHeader(Rfc6265CookieProcessor.java:90) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.parseCookies(Request.java:3078) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.Request.getServerCookies(Request.java:2191) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.parseSessionCookiesId(CoyoteAdapter.java:1017) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.postParseRequest(CoyoteAdapter.java:730) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:337) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:20:51.263  WARN 28297 --- [nio-8762-exec-8] o.a.catalina.connector.CoyoteAdapter     : Exception while attempting to add an entry to the access log
+
+java.lang.NoClassDefFoundError: org/apache/catalina/core/StandardEngine$NoopAccessLog
+	at org.apache.catalina.core.StandardEngine.logAccess(StandardEngine.java:319) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.catalina.connector.CoyoteAdapter.log(CoyoteAdapter.java:490) ~[tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:438) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_192]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_192]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.16.jar!/:9.0.16]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_192]
+
+2019-03-25 14:20:52.056  INFO 28297 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms

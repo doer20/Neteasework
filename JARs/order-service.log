@@ -489,3 +489,10 @@ Using generated security password: 8462683d-dbd0-4cf7-af97-1ac079bc1ca0
 2019-03-25 13:50:47.283  INFO 28362 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-03-25 13:55:47.294  INFO 28362 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-03-25 14:00:47.302  INFO 28362 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:05:47.318  INFO 28362 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:10:47.325  INFO 28362 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:15:47.331  INFO 28362 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:19:07.069  INFO 28362 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/169.254.66.60:order-service:8811 - Re-registering apps/ORDER-SERVICE
+2019-03-25 14:19:07.086  INFO 28362 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/169.254.66.60:order-service:8811: registering service...
+2019-03-25 14:19:07.237  INFO 28362 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/169.254.66.60:order-service:8811 - registration status: 204
+2019-03-25 14:20:47.338  INFO 28362 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

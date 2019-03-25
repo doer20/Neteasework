@@ -547,3 +547,11 @@ Caused by: java.net.SocketException: Connection reset
 2019-03-25 13:50:47.615  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-03-25 13:55:47.626  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-03-25 14:00:47.631  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:05:47.641  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:10:47.648  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:15:47.657  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:19:05.773  INFO 28353 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701 - Re-registering apps/ACCOUNT-SERVICE
+2019-03-25 14:19:05.785  INFO 28353 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701: registering service...
+2019-03-25 14:19:05.905  INFO 28353 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/169.254.66.60:account-service:8701 - registration status: 204
+2019-03-25 14:20:47.663  INFO 28353 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:21:00.145  INFO 28353 --- [nio-8701-exec-2] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token 4047f91a-386e-44cb-b7c3-9f998f97cb98

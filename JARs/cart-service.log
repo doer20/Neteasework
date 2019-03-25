@@ -643,3 +643,10 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6
 2019-03-25 13:50:46.747  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-03-25 13:55:46.758  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-03-25 14:00:46.765  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:05:46.780  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:10:46.788  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:15:46.797  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-03-25 14:19:04.778  INFO 28359 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/169.254.66.60:cart-service:8821 - Re-registering apps/CART-SERVICE
+2019-03-25 14:19:04.804  INFO 28359 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/169.254.66.60:cart-service:8821: registering service...
+2019-03-25 14:19:04.995  INFO 28359 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/169.254.66.60:cart-service:8821 - registration status: 204
+2019-03-25 14:20:46.807  INFO 28359 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
