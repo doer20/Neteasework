@@ -92,11 +92,10 @@ public class ViewController {
         String unsoldMes = productService.getUnsoldList();
         List<Product> unsoldList = JSON.parseArray(unsoldMes,Product.class);
         model.addAttribute("unsoldList",unsoldList);
-        List<String> auths = (List<String>) httpSession.getAttribute("authorities");
-        if (auths != null && auths.contains("ROLE_BUYER")){
-            int cartCount = Integer.parseInt(cartService.getCount());
-            model.addAttribute("cartCount",cartCount);
-        }
+
+        int cartCount = Integer.parseInt(cartService.getCount());
+        model.addAttribute("cartCount",cartCount);
+
         return "unsold";
     }
 
@@ -129,17 +128,18 @@ public class ViewController {
         if (auths != null && auths.contains("ROLE_BUYER")){
             int cartCount = Integer.parseInt(cartService.getCount());
             model.addAttribute("cartCount",cartCount);
+            String orderJson = orderService.getOrderByProductId(productId);
+            List<Order> orderList = JSON.parseArray(orderJson,Order.class);
+            if (!orderList.isEmpty()){
+                Order order = orderList.get(0);
+                model.addAttribute("order",order);
+            }
+            String cartJson = cartService.getItem(productId);
+            Cart cart = JSON.parseObject(cartJson,Cart.class);
+            model.addAttribute("cart",cart);
         }
-        String orderJson = orderService.getOrderByProductId(productId);
-        List<Order> orderList = JSON.parseArray(orderJson,Order.class);
-        if (!orderList.isEmpty()){
-            Order order = orderList.get(0);
-            model.addAttribute("order",order);
-        }
-        String cartJson = cartService.getItem(productId);
-        Cart cart = JSON.parseObject(cartJson,Cart.class);
+
         model.addAttribute("product",product);
-        model.addAttribute("cart",cart);
         return "product";
     }
 
@@ -170,8 +170,6 @@ public class ViewController {
         if (product.getProductId() == null)
             return "redirect:/home";
         model.addAttribute("originProduct",product);
-        int cartCount = Integer.parseInt(cartService.getCount());
-        model.addAttribute("cartCount",cartCount);
         return "edit";
     }
 
@@ -204,8 +202,6 @@ public class ViewController {
 
     @RequestMapping(value = "/public", method = RequestMethod.GET)
     public String publicPage(Model model){
-        int cartCount = Integer.parseInt(cartService.getCount());
-        model.addAttribute("cartCount",cartCount);
         return "public";
     }
 
