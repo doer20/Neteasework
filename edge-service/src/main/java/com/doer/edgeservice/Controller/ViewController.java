@@ -49,7 +49,9 @@ public class ViewController {
     @ResponseBody
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String getToken(HttpSession httpSession,HttpServletResponse response, String username, String password){
-        String token = loginService.getToken(username,password);
+        String tokenMes = loginService.getToken(username,password);
+        String token = JSON.parseObject(tokenMes).getString("access_token");
+        int expire = JSON.parseObject(tokenMes).getInteger("expires_in");
         httpSession.setAttribute("Authorization","Bearer "+token);
         String userInfoJson = loginService.authUser();
         JSONObject info = JSON.parseObject(userInfoJson);
@@ -67,6 +69,7 @@ public class ViewController {
             httpSession.setAttribute("isLogin",true);
             httpSession.setAttribute("username",name);
             httpSession.setAttribute("authorities",auths);
+            httpSession.setMaxInactiveInterval(expire);
             Cookie tokenCookie = new Cookie("Authorization", "Bearer-"+token);
             response.addCookie(tokenCookie);
 //        response.setHeader("Authorization", "Bearer "+token);

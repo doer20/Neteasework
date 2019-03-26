@@ -13,20 +13,9 @@ import java.io.IOException;
 import java.util.*;
 
 public class AccountInterceptor implements HandlerInterceptor {
-
-    @Autowired
-    public AccountService accountService;
-
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws IOException {
         String authKey = FeignOauth2RequestInterceptor.AUTHORIZATION_HEADER;
-        String authInSession = (String) request.getSession().getAttribute("Authorization");
-        if (authInSession != null && !checkTokenInvalid()){
-            request.getSession().removeAttribute("Authorization");
-            request.getSession().removeAttribute("isLogin");
-            request.getSession().removeAttribute("username");
-            request.getSession().removeAttribute("authorities");
-        }
         Cookie[] cookies = request.getCookies();
         if (cookies != null){
             for (Cookie cookie:cookies){
@@ -77,19 +66,6 @@ public class AccountInterceptor implements HandlerInterceptor {
             }
         }
         response.sendRedirect("/login");
-        return false;
-    }
-
-    private boolean checkTokenInvalid(){
-        String mes = accountService.getUserInfo();
-        String errorMes = JSON.parseObject(mes).getString("error");
-        Boolean authenticated = JSON.parseObject(mes).getBoolean("authenticated");
-        if (errorMes != null){
-            return false;
-        }
-        if (authenticated){
-            return true;
-        }
         return false;
     }
 }

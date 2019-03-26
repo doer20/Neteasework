@@ -23,6 +23,6 @@ public class LoginService {
 
     public String getToken(String username,String password){
         String mes = tokenService.token(grant_type,scope,username,password);
-        return JSON.parseObject(mes).getString(tokenKey);
+        return mes;
     }
 }
