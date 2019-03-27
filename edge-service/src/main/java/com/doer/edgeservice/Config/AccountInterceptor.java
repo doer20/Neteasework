@@ -1,13 +1,8 @@
 package com.doer.edgeservice.Config;
 
-import com.alibaba.fastjson.JSON;
-import com.doer.edgeservice.Service.AccountService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
@@ -15,17 +10,6 @@ import java.util.*;
 public class AccountInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws IOException {
-        String authKey = FeignOauth2RequestInterceptor.AUTHORIZATION_HEADER;
-        Cookie[] cookies = request.getCookies();
-        if (cookies != null){
-            for (Cookie cookie:cookies){
-                if (authKey.equals(cookie.getName())){
-                    String tokenHeader = cookie.getValue().replaceFirst("-"," ");
-                    request.getSession().setAttribute(authKey,tokenHeader);
-                    break;
-                }
-            }
-        }
         String path = request.getServletPath();
         if (path.startsWith("/login")
                 || path.startsWith("/home")

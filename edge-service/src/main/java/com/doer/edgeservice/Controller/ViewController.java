@@ -70,8 +70,6 @@ public class ViewController {
             httpSession.setAttribute("username",name);
             httpSession.setAttribute("authorities",auths);
             httpSession.setMaxInactiveInterval(expire);
-            Cookie tokenCookie = new Cookie("Authorization", "Bearer-"+token);
-            response.addCookie(tokenCookie);
 //        response.setHeader("Authorization", "Bearer "+token);
             return "success";
         }
